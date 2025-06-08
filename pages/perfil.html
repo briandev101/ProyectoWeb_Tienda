@@ -4,105 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil de Usuario</title>
+    <link rel="icon" href="../imagenes/icon.png" />
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
 <body>
-
-    <header>
-        <h1>Mi Perfil</h1>
+    <header class="encabezado">
+        <div class="encabezado-logo">
+            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer" class="encabezado-imagen-logo">
+        </div>
+        <nav class="navegacion-principal">
+            <ul class="navegacion-lista-principal">
+                <li class="navegacion-item">
+                    <a href="#" class="navegacion-enlace navegacion-enlace--ubicacion">
+                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion" class="navegacion-icono">
+                    </a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="../index.html" class="navegacion-enlace">Inicio</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="" class="navegacion-enlace">Tienda</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="blog.html" class="navegacion-enlace">Blog</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="contactos.html" class="navegacion-enlace">Contactos</a>
+                </li>
+            </ul>
+            <ul class="navegacion-lista-iconos">
+                <li class="navegacion-item">
+                    <img src="../imagenes/search.svg" alt="Icono de busqueda" class="navegacion-icono">
+                </li>
+                <li class="navegacion-item">
+                    <img src="../imagenes/card.svg" alt="Icono de carrito de compras" class="navegacion-icono">
+                </li>
+                <li class="navegacion-item">
+                    <a href="registro.html" class="navegacion-enlace navegacion-enlace--usuario">
+                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario" class="navegacion-icono">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <figure>
-                <img src="placeholder-user-icon.png" alt="Foto de perfil de usuario" width="120" height="120">
-                <figcaption>(Nombre de Usuario)</figcaption>
+    <main class="perfil-principal">
+        <section class="perfil-seccion-usuario">
+            <figure class="usuario-foto-contenedor">
+                <img src="../imagenes/placeholder-usuario.png" alt="Foto de perfil de usuario" width="120" height="120" class="usuario-foto">
+                <figcaption class="usuario-nombre">(Nombre de Usuario)</figcaption>
             </figure>
-            <p>Último inicio de sesión: 05 de junio de 2025</p>
+            <p class="usuario-ultimo-acceso">Ultimo inicio de sesion: <span class="usuario-fecha-acceso"></span></p>
         </section>
 
-        <section>
-            <h2>Información Personal</h2>
-            <ul>
-                <li><span>Nombre completo:</span> (Nombre Completo del Usuario)</li>
-                <li><span>Correo Electrónico:</span> (correo@ejemplo.com)</li>
-                <li><span>Número de Teléfono:</span> (+1 809 123 4567)</li>
-                <li><span>Fecha de Nacimiento:</span> (DD/MM/AAAA)</li>
-                <li><span>Género:</span> (Preferir no decir / Masculino / Femenino / Otro)</li>
-                <li><span>País:</span> República Dominicana</li>
-                <li><span>Ciudad:</span> Santiago de los Caballeros</li>
+        <section class="perfil-seccion-info">
+            <h2 class="seccion-titulo">Informacion Personal</h2>
+            <ul class="informacion-personal-lista">
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Nombre completo:</span> (Nombre Completo del Usuario)
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Correo Electronico:</span> (correo@ejemplo.com)
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Numero de Telefono:</span> (+1 809 123 4567)
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Fecha de Nacimiento:</span> (DD/MM/AAAA)
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Genero:</span> (Preferir no decir / Masculino / Femenino / Otro)
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Pais:</span> Republica Dominicana
+                </li>
+                <li class="informacion-personal-item">
+                    <span class="informacion-personal-etiqueta">Ciudad:</span> Santiago de los Caballeros
+                </li>
             </ul>
-            <a href="#">Editar Información de Perfil</a>
+            <a href="#" class="boton-editar-perfil">Editar Informacion de Perfil</a>
         </section>
 
-        <section>
-            <h2>Mis Compras</h2>
+        <section class="perfil-seccion-compras">
+            <h2 class="seccion-titulo">Mis Compras</h2>
 
-            <article>
-                <h3>Pedido #12345</h3>
-                <ul>
-                    <li><span>Fecha:</span> 13 de febrero, 2025</li>
-                    <li><span>Artículos:</span> 2 x Collar de cerámica, 1 x Tapiz de pared</li>
-                    <li><span>Total:</span> $150.00</li>
-                    <li><span>Estado:</span> Entregado</li>
+            <article class="pedido-tarjeta">
+                <h3 class="pedido-titulo">Pedido #12345</h3>
+                <ul class="pedido-lista-detalles">
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Fecha:</span> 13 de febrero, 2025
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Articulos:</span> 2 x Collar de ceramica, 1 x Tapiz de pared
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Total:</span> $150.00
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Estado:</span> Entregado
+                    </li>
                 </ul>
-                <a href="#">Ver Detalles del Pedido</a>
+                <a href="#" class="pedido-enlace-detalles">Ver Detalles del Pedido</a>
             </article>
 
-            <article>
-                <h3>Pedido #67890</h3>
-                <ul>
-                    <li><span>Fecha:</span> 25 de abril, 2025</li>
-                    <li><span>Artículos:</span> 1 x Escultura de madera</li>
-                    <li><span>Total:</span> $85.50</li>
-                    <li><span>Estado:</span> Enviado</li>
+            <article class="pedido-tarjeta">
+                <h3 class="pedido-titulo">Pedido #67890</h3>
+                <ul class="pedido-lista-detalles">
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Fecha:</span> 25 de abril, 2025
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Articulos:</span> 1 x Escultura de madera
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Total:</span> $85.50
+                    </li>
+                    <li class="pedido-item-detalle">
+                        <span class="pedido-etiqueta">Estado:</span> Enviado
+                    </li>
                 </ul>
-                <a href="#">Ver Detalles del Pedido</a>
+                <a href="#" class="pedido-enlace-detalles">Ver Detalles del Pedido</a>
             </article>
 
-            <a href="#">Ver Todas Mis Compras</a>
+            <a href="#" class="boton-ver-todas-compras">Ver Todas Mis Compras</a>
         </section>
 
-        <section>
-            <h2>Direcciones de Envío</h2>
-            <article>
-                <h3>Dirección Principal</h3>
-                <address>
+        <section class="perfil-seccion-direcciones">
+            <h2 class="seccion-titulo">Direcciones de Envio</h2>
+            <article class="direccion-tarjeta">
+                <h3 class="direccion-titulo">Direccion Principal</h3>
+                <address class="direccion-texto">
                     Calle 1, No. 123<br>
                     Sector Modelo<br>
                     Santiago de los Caballeros, 51000<br>
-                    República Dominicana
+                    Republica Dominicana
                 </address>
-                <a href="#">Editar</a> | <a href="#">Eliminar</a>
+                <a href="#" class="direccion-enlace-editar">Editar</a> | <a href="#" class="direccion-enlace-eliminar">Eliminar</a>
             </article>
-            <a href="#">Agregar Nueva Dirección</a>
+            <a href="#" class="boton-agregar-direccion">Agregar Nueva Direccion</a>
         </section>
 
-        <section>
-            <h2>Métodos de Pago</h2>
-            <article>
-                <h3>Tarjeta de Crédito</h3>
-                <p>Visa **** **** **** 1234</p>
-                <p>Expira: 12/27</p>
-                <a href="#">Editar</a> | <a href="#">Eliminar</a>
+        <section class="perfil-seccion-pagos">
+            <h2 class="seccion-titulo">Metodos de Pago</h2>
+            <article class="metodo-pago-tarjeta">
+                <h3 class="metodo-pago-titulo">Tarjeta de Credito</h3>
+                <p class="metodo-pago-numero">Visa **** **** **** 1234</p>
+                <p class="metodo-pago-expiracion">Expira: 12/27</p>
+                <a href="#" class="metodo-pago-enlace-editar">Editar</a> | <a href="#" class="metodo-pago-enlace-eliminar">Eliminar</a>
             </article>
-            <a href="#">Agregar Nuevo Método de Pago</a>
+            <a href="#" class="boton-agregar-pago">Agregar Nuevo Metodo de Pago</a>
         </section>
 
-        <section>
-            <h2>Configuración de la Cuenta</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Cambiar Contraseña</a></li>
-                    <li><a href="#">Administrar Sesiones Activas</a></li>
-                    <li><a href="#">Eliminar Cuenta</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
+        <section class="perfil-seccion-configuracion">
+            <h2 class="seccion-titulo">Configuracion de la Cuenta</h2>
+            <nav class="configuracion-navegacion">
+                <ul class="configuracion-lista">
+                    <li class="configuracion-item"><a href="#" class="configuracion-enlace">Cambiar Contrasena</a></li>
+                    <li class="configuracion-item"><a href="#" class="configuracion-enlace">Administrar Sesiones Activas</a></li>
+                    <li class="configuracion-item"><a href="#" class="configuracion-enlace">Eliminar Cuenta</a></li>
+                    <li class="configuracion-item"><a href="#" class="configuracion-enlace">Cerrar Sesion</a></li>
                 </ul>
             </nav>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+    <footer class="pie-pagina">
+        <div class="pie-enlaces">
+            <h3 class="pie-enlaces-titulo">Enlaces</h3>
+            <ul class="pie-enlaces-lista">
+                <li class="pie-enlaces-item"><a href="articulo_info.html" class="pie-enlaces-link">Tienda</a></li>
+                <li class="pie-enlaces-item"><a href="sobre-nosotros.html" class="pie-enlaces-link">Sobre Nosotros</a></li>
+                <li class="pie-enlaces-item"><a href="blog.html" class="pie-enlaces-link">Blog</a></li>
+                <li class="pie-enlaces-item"><a href="terminos-privacidad.html" class="pie-enlaces-link">Terminos y Privacidad</a></li>
+            </ul>
+        </div>
+        <div class="pie-contactos">
+            <h3 class="pie-contactos-titulo">Contactos</h3>
+            <ul class="pie-contactos-lista">
+                <li class="pie-contactos-item">
+                    Email:
+                    <a href="mailto:info@tiendacer.com" class="pie-contactos-link">info@tiendacer.com</a>
+                </li>
+                <li class="pie-contactos-item">
+                    Telefono:
+                    <a href="tel:+18000000000" class="pie-contactos-link">+1 800-000-0000</a>
+                </li>
+                <li class="pie-contactos-item">
+                    Direccion: Calle Falsa 123 Santiago
+                </li>
+            </ul>
+        </div>
+        <div class="pie-redes-sociales">
+            <h3 class="pie-redes-sociales-titulo">Siguenos</h3>
+            <ul class="pie-redes-sociales-lista">
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">Facebook</a>
+                </li>
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">Instagram</a>
+                </li>
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">X</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pie-derechos-reservados">
+            <p class="pie-derechos-reservados-texto">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>

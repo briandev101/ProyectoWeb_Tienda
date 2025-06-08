@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda/Articulo</title>
+    <link rel="icon" href="../imagenes/icon.png" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado-logo">
+            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer" class="encabezado-imagen-logo">
+        </div>
+        <nav class="navegacion-principal">
+            <ul class="navegacion-lista-principal">
+                <li class="navegacion-item">
+                    <a href="#" class="navegacion-enlace navegacion-enlace--ubicacion">
+                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion" class="navegacion-icono">
+                    </a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="../index.html" class="navegacion-enlace">Inicio</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="articulo_info.html" class="navegacion-enlace">Tienda</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="blog.html" class="navegacion-enlace">Blog</a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="contactos.html" class="navegacion-enlace">Contactos</a>
+                </li>
+            </ul>
+            <ul class="navegacion-lista-iconos">
+                <li class="navegacion-item">
+                    <a href="#" class="navegacion-enlace navegacion-enlace--buscar">
+                        <img src="../imagenes/search.svg" alt="Icono de busqueda" class="navegacion-icono">
+                    </a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="carro_compras.html" class="navegacion-enlace navegacion-enlace--carrito">
+                        <img src="../imagenes/card.svg" alt="Icono de carrito de compras" class="navegacion-icono">
+                    </a>
+                </li>
+                <li class="navegacion-item">
+                    <a href="registro.html" class="navegacion-enlace navegacion-enlace--usuario">
+                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario" class="navegacion-icono">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal-contenedor">
+        <nav class="navegacion-migas-pan">
+            <ul class="migas-pan-lista">
+                <li class="migas-pan-item"><a href="../index.html" class="migas-pan-enlace">Inicio</a></li>
+                <li class="migas-pan-item"><span class="migas-pan-divisor">/</span></li>
+                <li class="migas-pan-item"><a href="articulo_info.html" class="migas-pan-enlace">Tienda</a></li>
+                <li class="migas-pan-item"><span class="migas-pan-divisor">/</span></li>
+                <li class="migas-pan-item"><span class="migas-pan-actual">Nombre Articulo</span></li>
+            </ul>
+        </nav>
+
+        <article class="producto-detalle">
+            <img src="../imagenes/producto-detalle-principal.png" alt="Imagen principal del articulo" class="producto-detalle-imagen">
+            
+            <section class="producto-info-principal">
+                <div class="info-principal-contenedor">
+                    <h1 class="info-titulo">Nombre del Articulo</h1>
+                    <p class="info-descripcion">Descripcion breve del articulo o su tipo de producto.</p>
+                </div>
+                <div class="info-detalles-adicionales">
+                    <p class="info-material">Material: Algodon</p>
+                    <ul class="info-caracteristicas-lista">
+                        <li class="info-caracteristica-item">Caracteristica 1</li>
+                        <li class="info-caracteristica-item">Caracteristica 2</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="producto-acciones">
+                <div class="acciones-contenedor">
+                    <h3 class="acciones-precio">RD$120.00</h3>
+                    <h3 class="acciones-disponibilidad">En stock</h3>
+                    <p class="acciones-texto-adicional">Texto adicional sobre envio o promociones.</p>
+                    <button class="boton-comprar">Comprar Ahora</button>
+                    <button class="boton-agregar-carrito">Agregar Al Carrito</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <section class="seccion-reseñas">
+        <div class="reseñas-contenedor">
+            <h2 class="reseñas-titulo">Reseñas de Clientes</h2>
+            <p class="reseñas-texto-sin-comentarios">Aun no hay reseñas para este producto.</p>
+        </div>
+        <div class="seccion-productos-relacionados">
+            <h2 class="productos-relacionados-titulo">Productos Que Te Podrian Gustar</h2>
+            <div class="productos-relacionados-lista">
+                <article class="producto-relacionado-tarjeta">
+                    <img src="../imagenes/producto-relacionado-1.png" alt="Imagen de producto relacionado 1" class="producto-relacionado-imagen">
+                    <h3 class="producto-relacionado-titulo">Nombre Producto Relacionado 1</h3>
+                    <p class="producto-relacionado-precio">RD$XX.XX</p>
+                    <button class="boton-comprar">Comprar Ahora</button>
+                </article>
+                <article class="producto-relacionado-tarjeta">
+                    <img src="../imagenes/producto-relacionado-2.png" alt="Imagen de producto relacionado 2" class="producto-relacionado-imagen">
+                    <h3 class="producto-relacionado-titulo">Nombre Producto Relacionado 2</h3>
+                    <p class="producto-relacionado-precio">RD$YY.YY</p>
+                    <button class="boton-comprar">Comprar Ahora</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="pie-enlaces">
+            <h3 class="pie-enlaces-titulo">Enlaces</h3>
+            <ul class="pie-enlaces-lista">
+                <li class="pie-enlaces-item"><a href="articulo_info.html" class="pie-enlaces-link">Tienda</a></li>
+                <li class="pie-enlaces-item"><a href="sobre-nosotros.html" class="pie-enlaces-link">Sobre Nosotros</a></li>
+                <li class="pie-enlaces-item"><a href="blog.html" class="pie-enlaces-link">Blog</a></li>
+                <li class="pie-enlaces-item"><a href="terminos-privacidad.html" class="pie-enlaces-link">Terminos y Privacidad</a></li>
+            </ul>
+        </div>
+        <div class="pie-contactos">
+            <h3 class="pie-contactos-titulo">Contactos</h3>
+            <ul class="pie-contactos-lista">
+                <li class="pie-contactos-item">
+                    Email:
+                    <a href="mailto:info@tiendacer.com" class="pie-contactos-link">info@tiendacer.com</a>
+                </li>
+                <li class="pie-contactos-item">
+                    Telefono:
+                    <a href="tel:+18000000000" class="pie-contactos-link">+1 800-000-0000</a>
+                </li>
+                <li class="pie-contactos-item">
+                    Direccion: Calle Falsa 123 Santiago
+                </li>
+            </ul>
+        </div>
+        <div class="pie-redes-sociales">
+            <h3 class="pie-redes-sociales-titulo">Siguenos</h3>
+            <ul class="pie-redes-sociales-lista">
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">Facebook</a>
+                </li>
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">Instagram</a>
+                </li>
+                <li class="pie-redes-sociales-item">
+                    <a href="#" class="pie-redes-sociales-link">X</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pie-derechos-reservados">
+            <p class="pie-derechos-reservados-texto">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../imagenes/icon.png" />
     <title>Registro</title>
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
-
 <body>
-    <div>
-        <!-- Sección izquierda -->
-        <div>
-            <h1><span>¡Bienvenido a Cer</span>, el lugar donde la ternura se viste de moda!</h1>
-            <img src="../imagenes/icon.png" alt="logo" />
-            <p>CER STORE</p>
-            <p>Kids Store</p>
-        </div>
+    <main class="registro-principal">
+        <section class="registro-informacion">
+            <h1 class="informacion-titulo"><span>¡Bienvenido a Cer</span>, el lugar donde la ternura se viste de moda!</h1>
+            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer" class="informacion-logo" />
+            <p class="informacion-texto-marca">CER STORE</p>
+            <p class="informacion-texto-subtitulo">Kids Store</p>
+        </section>
 
-        <!-- Formulario de registro -->
-        <div>
-            <h2>Crea Una Cuenta</h2>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required />
+        <section class="registro-seccion-formulario">
+            <h2 class="formulario-titulo">Crea Una Cuenta</h2>
+            <form class="registro-formulario">
+                <div class="formulario-grupo">
+                    <label for="nombre" class="formulario-etiqueta">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required class="formulario-input" />
+                </div>
 
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required />
+                <div class="formulario-grupo">
+                    <label for="apellido" class="formulario-etiqueta">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required class="formulario-input" />
+                </div>
 
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" name="correo" required />
+                <div class="formulario-grupo">
+                    <label for="correo" class="formulario-etiqueta">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" required class="formulario-input" />
+                </div>
 
-                <label for="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" required />
+                <div class="formulario-grupo">
+                    <label for="contrasena" class="formulario-etiqueta">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required class="formulario-input" />
+                </div>
 
-                <label for="repetirContrasena">Repita La Contraseña</label>
-                <input type="password" id="repetirContrasena" name="repetirContrasena" required />
-
-                <button type="submit">Registrarse</button>
+                <div class="formulario-grupo">
+                    <label for="repetir-contrasena" class="formulario-etiqueta">Repita La Contraseña</label>
+                    <input type="password" id="repetir-contrasena" name="repetirContrasena" required class="formulario-input" />
+                </div>
+                
+                <button type="submit" class="boton-registro">Registrarse</button>
             </form>
 
-            <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
-        </div>
-    </div>
+            <p class="formulario-texto-enlace">
+                ¿Ya tienes una cuenta? <a href="inicio-sesion.html" class="formulario-enlace">Inicia sesión</a>
+            </p>
+        </section>
+    </main>
 </body>
-
 </html>

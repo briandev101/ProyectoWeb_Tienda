@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../imagenes/icon.png" />
-    <title>Inicio de Sesión</title>
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
-
 <body>
-    <div>
-        <!-- Sección izquierda -->
-        <div>
-            <h1><span>¡Bienvenido a Cer</span>, el lugar donde la ternura se viste de moda!</h1>
-            <img src="../imagenes/icon.png" alt="logo" />
-            <p>CER STORE</p>
-            <p>Kids Store</p>
-        </div>
 
-        <!-- Formulario derecha -->
-        <div>
-            <h2>Inicia Sesión</h2>
-            <form>
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" name="correo" required />
+    <main class="sesion-principal">
+        <section class="sesion-informacion">
+            <h1 class="informacion-titulo"><span>¡Bienvenido a Cer</span>, el lugar donde la ternura se viste de moda!</h1>
+            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer" class="informacion-logo" />
+            <p class="informacion-texto-marca">CER STORE</p>
+            <p class="informacion-texto-subtitulo">Kids Store</p>
+        </section>
 
-                <label for="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" required />
+        <section class="sesion-seccion-formulario">
+            <h2 class="formulario-titulo">Inicia Sesion</h2>
+            <form class="sesion-formulario">
+                <div class="formulario-grupo">
+                    <label for="correo" class="formulario-etiqueta">Correo Electronico</label>
+                    <input type="email" id="correo" name="correo" required class="formulario-input" />
+                </div>
 
-                <button type="submit">Iniciar Sesión</button>
+                <div class="formulario-grupo">
+                    <label for="contrasena" class="formulario-etiqueta">Contrasena</label>
+                    <input type="password" id="contrasena" name="contrasena" required class="formulario-input" />
+                </div>
+
+                <button type="submit" class="boton-sesion">Iniciar Sesion</button>
             </form>
-            <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-        </div>
-    </div>
+            <p class="formulario-texto-enlace">
+                ¿No tienes una cuenta? <a href="registro.html" class="formulario-enlace-registro">Registrate</a>
+            </p>
+            <p class="formulario-texto-enlace">
+                <a href="#" class="formulario-enlace-recuperar">¿Olvidaste tu contrasena?</a>
+            </p>
+        </section>
+    </main>
 </body>
-
 </html>
