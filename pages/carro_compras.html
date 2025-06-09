@@ -6,221 +6,204 @@
     <title>Tu Carrito de Compras</title>
     <link rel="icon" href="../imagenes/icon.png" />
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <header class="encabezado">
-        <div class="encabezado-logo">
-            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer" class="encabezado-imagen-logo">
+    <header class="cabecera">
+        <div class="logo">
+            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer">
         </div>
-        <nav class="navegacion-principal">
-            <ul class="navegacion-lista-principal">
-                <li class="navegacion-item">
-                    <a href="#" class="navegacion-enlace navegacion-enlace--ubicacion">
-                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion" class="navegacion-icono">
+        <nav class="navegacion">
+            <ul class="nav-principal">
+                <li>
+                    <a href="#" class="ubicacion">
+                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion">
                     </a>
                 </li>
-                <li class="navegacion-item">
-                    <a href="../index.html" class="navegacion-enlace">Inicio</a>
-                </li>
-                <li class="navegacion-item">
-                    <a href="" class="navegacion-enlace">Tienda</a>
-                </li>
-                <li class="navegacion-item">
-                    <a href="blog.html" class="navegacion-enlace">Blog</a>
-                </li>
-                <li class="navegacion-item">
-                    <a href="contactos.html" class="navegacion-enlace">Contactos</a>
-                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
             </ul>
-            <ul class="navegacion-lista-iconos">
-                <li class="navegacion-item">
-                    <a href="#" class="navegacion-enlace navegacion-enlace--buscar">
-                        <img src="../imagenes/search.svg" alt="Icono de busqueda" class="navegacion-icono">
+            <ul class="nav-iconos">
+                <li>
+                    <a href="#" class="buscar">
+                        <img src="../imagenes/search.svg" alt="Icono de busqueda">
                     </a>
                 </li>
-                <li class="navegacion-item">
-                    <a href="carro_compras.html" class="navegacion-enlace navegacion-enlace--carrito">
-                        <img src="../imagenes/card.svg" alt="Icono de carrito de compras" class="navegacion-icono">
+                <li>
+                    <a href="carro_compras.html" class="carrito">
+                        <img src="../imagenes/card.svg" alt="Icono de carrito de compras">
                     </a>
                 </li>
-                <li class="navegacion-item">
-                    <a href="registro.html" class="navegacion-enlace navegacion-enlace--usuario">
-                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario" class="navegacion-icono">
+                <li>
+                    <a href="registro.html" class="usuario">
+                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="contenido-principal">
+    <main class="principal">
         
-        <section class="seccion-titulo-pagina">
-            <div class="titulo-contenedor">
-                <h1 class="titulo-principal">Tu Carrito de Compras</h1>
-                <p class="titulo-subtitulo">Revisa y completa tu compra</p>
+        <section class="titulo-pagina">
+            <div class="header-pagina">
+                <h1>Tu Carrito de Compras</h1>
+                <p>Revisa y completa tu compra</p>
             </div>
             
-            <div class="progreso-compra-contenedor">
-                <div class="progreso-paso progreso-paso--activo">
-                    <span class="progreso-paso-numero">1</span>
-                    <span class="progreso-paso-texto">Carrito</span>
+            <div class="pasos">
+                <div class="paso paso-1 activo">
+                    <span>1</span>
+                    <span>Carrito</span>
                 </div>
-                <div class="progreso-paso">
-                    <span class="progreso-paso-numero">2</span>
-                    <span class="progreso-paso-texto">Envio</span>
+                <div class="paso paso-2">
+                    <span>2</span>
+                    <span>Envio</span>
                 </div>
-                <div class="progreso-paso">
-                    <span class="progreso-paso-numero">3</span>
-                    <span class="progreso-paso-texto">Pago</span>
+                <div class="paso paso-3">
+                    <span>3</span>
+                    <span>Pago</span>
                 </div>
-                <div class="progreso-paso">
-                    <span class="progreso-paso-numero">4</span>
-                    <span class="progreso-paso-texto">Confirmacion</span>
+                <div class="paso paso-4">
+                    <span>4</span>
+                    <span>Confirmacion</span>
                 </div>
             </div>
         </section>
 
         <section class="seccion-carrito">
-            <div class="carrito-contenedor-detalles">
+            <div class="contenido-carrito">
                 
-                <div class="carrito-lista-productos">
+                <div class="lista-productos">
                     
-                    <article class="carrito-producto-item carrito-producto-item-1">
-                        <div class="carrito-producto-imagen-contenedor">
-                            <img src="../imagenes/producto-body-moncler.png" alt="Body-Moncler the cotton" class="carrito-producto-imagen">
+                    <article class="item-producto producto-1">
+                        <div class="imagen">
+                            <img src="../imagenes/producto-body-moncler.png" alt="Body-Moncler the cotton">
                         </div>
-                        <div class="carrito-producto-info">
-                            <h3 class="carrito-producto-titulo">Body-Moncler the cotton</h3>
-                            <p class="carrito-producto-descripcion">the 0-3 mess</p>
-                            <span class="carrito-producto-precio">RD$1,099.99</span>
+                        <div class="info">
+                            <h3>Body-Moncler the cotton</h3>
+                            <p>the 0-3 mess</p>
+                            <span>RD$1,099.99</span>
                         </div>
-                        <div class="carrito-producto-cantidad">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--menos" data-producto="1">-</button>
-                            <input type="number" class="carrito-input-cantidad" value="1" min="1" data-producto="1">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--mas" data-producto="1">+</button>
-                        </div>
-                    </article>
-
-                    <article class="carrito-producto-item carrito-producto-item-2">
-                        <div class="carrito-producto-imagen-contenedor">
-                            <img src="../imagenes/producto-body-hym.png" alt="Body-Mon's the HyM cotton" class="carrito-producto-imagen">
-                        </div>
-                        <div class="carrito-producto-info">
-                            <h3 class="carrito-producto-titulo">Body-Mon's the HyM cotton</h3>
-                            <p class="carrito-producto-descripcion">the 0-3 mess</p>
-                            <span class="carrito-producto-precio">RD$1,899.99</span>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--menos" data-producto="2">-</button>
-                            <input type="number" class="carrito-input-cantidad" value="1" min="1" data-producto="2">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--mas" data-producto="2">+</button>
+                        <div class="controles">
+                            <button class="menos" data-producto="1">-</button>
+                            <input type="number" value="1" min="1" data-producto="1">
+                            <button class="mas" data-producto="1">+</button>
                         </div>
                     </article>
 
-                    <article class="carrito-producto-item carrito-producto-item-3">
-                        <div class="carrito-producto-imagen-contenedor">
-                            <img src="../imagenes/producto-conjunto-cinco-piezas.png" alt="Conjunto de cinco piezas" class="carrito-producto-imagen">
+                    <article class="item-producto producto-2">
+                        <div class="imagen">
+                            <img src="../imagenes/producto-body-hym.png" alt="Body-Mon's the HyM cotton">
                         </div>
-                        <div class="carrito-producto-info">
-                            <h3 class="carrito-producto-titulo">Conjunto de cinco piezas</h3>
-                            <p class="carrito-producto-descripcion">de 0-3 meses</p>
-                            <span class="carrito-producto-precio">RD$1259.99</span>
+                        <div class="info">
+                            <h3>Body-Mon's the HyM cotton</h3>
+                            <p>the 0-3 mess</p>
+                            <span>RD$1,899.99</span>
                         </div>
-                        <div class="carrito-producto-cantidad">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--menos" data-producto="3">-</button>
-                            <input type="number" class="carrito-input-cantidad" value="1" min="1" data-producto="3">
-                            <button class="carrito-boton-cantidad carrito-boton-cantidad--mas" data-producto="3">+</button>
+                        <div class="controles">
+                            <button class="menos" data-producto="2">-</button>
+                            <input type="number" value="1" min="1" data-producto="2">
+                            <button class="mas" data-producto="2">+</button>
+                        </div>
+                    </article>
+
+                    <article class="item-producto producto-3">
+                        <div class="imagen">
+                            <img src="../imagenes/producto-conjunto-cinco-piezas.png" alt="Conjunto de cinco piezas">
+                        </div>
+                        <div class="info">
+                            <h3>Conjunto de cinco piezas</h3>
+                            <p>de 0-3 meses</p>
+                            <span>RD$1259.99</span>
+                        </div>
+                        <div class="controles">
+                            <button class="menos" data-producto="3">-</button>
+                            <input type="number" value="1" min="1" data-producto="3">
+                            <button class="mas" data-producto="3">+</button>
                         </div>
                     </article>
 
                 </div>
 
-                <aside class="resumen-compra">
-                    <div class="resumen-tarjeta">
-                        <h2 class="resumen-titulo">Resumen de compra</h2>
+                <aside class="resumen">
+                    <div class="tarjeta-resumen">
+                        <h2>Resumen de compra</h2>
                         
-                        <div class="resumen-linea">
-                            <span class="resumen-concepto">Subtotal (<span class="cantidad-productos">3</span> productos)</span>
-                            <span class="resumen-valor" id="subtotal">RD$1000</span>
+                        <div class="linea">
+                            <span>Subtotal (<span class="count-productos">3</span> productos)</span>
+                            <span id="subtotal">RD$1000</span>
                         </div>
                         
-                        <div class="resumen-linea">
-                            <span class="resumen-concepto">Envio</span>
-                            <span class="resumen-valor" id="envio">Gratis</span>
+                        <div class="linea">
+                            <span>Envio</span>
+                            <span id="envio">Gratis</span>
                         </div>
                         
-                        <div class="resumen-linea">
-                            <span class="resumen-concepto">Impuestos (10%)</span>
-                            <span class="resumen-valor" id="impuestos">RD$1000</span>
+                        <div class="linea">
+                            <span>Impuestos (10%)</span>
+                            <span id="impuestos">RD$1000</span>
                         </div>
                         
-                        <div class="cupon-seccion">
-                            <input type="text" class="cupon-input" placeholder="Codigo promocional">
-                            <button class="cupon-boton">Aplicar</button>
+                        <div class="cupon">
+                            <input type="text" placeholder="Codigo promocional">
+                            <button>Aplicar</button>
                         </div>
                         
-                        <div class="resumen-total">
-                            <span class="resumen-total-texto">Total:</span>
-                            <span class="resumen-total-valor" id="total">RD$1000</span>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span id="total">RD$1000</span>
                         </div>
                         
-                        <button class="boton-continuar">Continuar al envio</button>
+                        <button class="btn-continuar">Continuar al envio</button>
                     </div>
                 </aside>
 
             </div>
             
-            <div class="seccion-acciones-inferior">
-                <button class="boton-seguir-comprando">Seguir comprando</button>
+            <div class="acciones-inferior">
+                <button class="btn-seguir">Seguir comprando</button>
             </div>
         </section>
 
     </main>
 
-    <footer class="pie-pagina">
-        <div class="pie-enlaces">
-            <h3 class="pie-enlaces-titulo">Enlaces</h3>
-            <ul class="pie-enlaces-lista">
-                <li class="pie-enlaces-item"><a href="articulo_info.html" class="pie-enlaces-link">Tienda</a></li>
-                <li class="pie-enlaces-item"><a href="sobre-nosotros.html" class="pie-enlaces-link">Sobre Nosotros</a></li>
-                <li class="pie-enlaces-item"><a href="blog.html" class="pie-enlaces-link">Blog</a></li>
-                <li class="pie-enlaces-item"><a href="terminos-privacidad.html" class="pie-enlaces-link">Terminos y Privacidad</a></li>
+    <footer class="pie">
+        <div class="seccion-enlaces">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="articulo_info.html">Tienda</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="terminos-privacidad.html">Terminos y Privacidad</a></li>
             </ul>
         </div>
-        <div class="pie-contactos">
-            <h3 class="pie-contactos-titulo">Contactos</h3>
-            <ul class="pie-contactos-lista">
-                <li class="pie-contactos-item">
-                    Email:
-                    <a href="mailto:info@tiendacer.com" class="pie-contactos-link">info@tiendacer.com</a>
+        <div class="seccion-contactos">
+            <h3>Contactos</h3>
+            <ul>
+                <li>
+                    Email: <a href="mailto:info@tiendacer.com">info@tiendacer.com</a>
                 </li>
-                <li class="pie-contactos-item">
-                    Telefono:
-                    <a href="tel:+18000000000" class="pie-contactos-link">+1 800-000-0000</a>
+                <li>
+                    Telefono: <a href="tel:+18000000000">+1 800-000-0000</a>
                 </li>
-                <li class="pie-contactos-item">
+                <li>
                     Direccion: Calle Falsa 123 Santiago
                 </li>
             </ul>
         </div>
-        <div class="pie-redes-sociales">
-            <h3 class="pie-redes-sociales-titulo">Siguenos</h3>
-            <ul class="pie-redes-sociales-lista">
-                <li class="pie-redes-sociales-item">
-                    <a href="#" class="pie-redes-sociales-link">Facebook</a>
-                </li>
-                <li class="pie-redes-sociales-item">
-                    <a href="#" class="pie-redes-sociales-link">Instagram</a>
-                </li>
-                <li class="pie-redes-sociales-item">
-                    <a href="#" class="pie-redes-sociales-link">X</a>
-                </li>
+        <div class="seccion-redes">
+            <h3>Siguenos</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
             </ul>
         </div>
-        <div class="pie-derechos-reservados">
-            <p class="pie-derechos-reservados-texto">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
+        <div class="derechos">
+            <p>&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
         </div>
     </footer>
 
