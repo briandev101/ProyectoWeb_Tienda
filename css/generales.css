@@ -3,13 +3,19 @@
 header{
     display: flex;
     justify-content: space-between;
+    height: 11vh;
+    background-color: #F4F3EE;
+    align-items: center;
 }
 header .logo img{
-    width: 10vw;
+    width: 70px;
 }
 header nav, ul{
     display: flex;
     list-style: none;
+}
+nav .nav-principal{
+    margin-right: 350px;
 }
 nav ul li{
 margin-right: 20px;
@@ -19,11 +25,17 @@ nav ul li a{
     color:black;
 }
 
+/* header Iconos */
+.nav-iconos img{
+width: 25px;
+}
+
 /* footer */
 
 footer{
     background-color: black;
     color: white;
+    height: 40vh;
 }
 footer div{
     margin: 0 0 0 20px;
@@ -36,7 +48,32 @@ footer div ul li a{
 }
 footer div ul{
     display: block;
+    margin: 0;
+    padding: 0;
 }
 footer div ul li{
-    margin: 3px;
+    margin: 5px;
 }
+.container_footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding-top: 20px;
+}
+.line{
+   background-color: white;
+   height: 1px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.copy{
+    padding-left: 10px;
+    margin-top: 3.3%;
+    margin-left: 36vw;
+}
+
+.seccion-enlaces{
+
+}
+
