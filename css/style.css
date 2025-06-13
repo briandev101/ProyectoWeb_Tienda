@@ -5,14 +5,17 @@
 }
 .seccion-categorias{
     height: 40vh;
+    width: 100%;
 }
 .seccion-razones{
   height: 70vh;
   background-color:#9E116F;
-  display: flex;
+}
+.seccion-razones h2{
+    color: white;
 }
 .seccion-marcas{
-    height: 80vh;
+    height: 90vh;
     background-color: #D9D9D9;
 }
 /* Limites de el contenido images etc.. */
@@ -28,15 +31,43 @@
 .seccion-razones .contenedor-tarjetas{
      display: flex;
 }
+.seccion-razones .tarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px;
+    max-width: 33vw;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-razones .tarjeta img{
+width: 50%;
+height: auto;
+}
 .seccion-razones .contenedor-tarjetas img{
-    width: 47.27;
+    height: 100%;
 }
 .seccion-marcas .galeria-logos{
-   display: grid;
-   grid-template-columns: repeat(3,auto);
-    grid-template-columns: repeat(3,auto);
+display: flex;
+width: 100%;
+
 }
 .seccion-marcas .galeria-logos img{
-width: 33%;
+width: 7vw;
+height: auto;
+margin: 20px;
+
 }
 
+.seccion-marcas .galeria-logos{
+    display: grid;
+    grid-template-columns: repeat(3,33vw);
+}
+.seccion-marcas .galeria-logos .item-logo{
+    width: 50%;
+
+}
+.seccion-marcas .galeria-logos .item-logo img{
+    width: 100%;
+    
+}
