@@ -6,43 +6,56 @@
     <title>Tu Carrito de Compras</title>
     <link rel="icon" href="../imagenes/icon.png" />
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/generales.css">
 </head>
 <body>
 
-    <header class="cabecera">
-        <div class="logo">
-            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer">
+     <header class="encabezado">
+        <div class="contenedor-encabezado">
+
+            <div class="logo">
+                <img src="../imagenes/icon.png" alt="">
+            </div>
+
+            <nav class="nav-principal">
+                <ul class="enlaces-nav">
+                    <li>
+                        <figure href="#" class="enlace-ubicacion">
+                            <img src="../imagenes/pin.svg" alt="">
+                        </figure>
+                    </li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="articulo_info.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="buscador-header">
+                <input type="text" placeholder=" Descubre su estilo...">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
+            <div class="acciones-nav-escritorio">
+                <ul class="iconos-nav-escritorio">
+                    <li>
+                        <a href="pages/carro_compras.html">
+                            <img src="../imagenes/card.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/registro.html">
+                            <img src="../imagenes/account.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="icono-busqueda-movil">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
         </div>
-        <nav class="navegacion">
-            <ul class="nav-principal">
-                <li>
-                    <a href="#" class="ubicacion">
-                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion">
-                    </a>
-                </li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-            <ul class="nav-iconos">
-                <li>
-                    <a href="#" class="buscar">
-                        <img src="../imagenes/search.svg" alt="Icono de busqueda">
-                    </a>
-                </li>
-                <li>
-                    <a href="carro_compras.html" class="carrito">
-                        <img src="../imagenes/card.svg" alt="Icono de carrito de compras">
-                    </a>
-                </li>
-                <li>
-                    <a href="registro.html" class="usuario">
-                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario">
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="principal">
@@ -75,94 +88,8 @@
 
         <section class="seccion-carrito">
             <div class="contenido-carrito">
-                
-                <div class="lista-productos">
-                    
-                    <article class="item-producto producto-1">
-                        <div class="imagen">
-                            <img src="../imagenes/producto-body-moncler.png" alt="Body-Moncler the cotton">
-                        </div>
-                        <div class="info">
-                            <h3>Body-Moncler the cotton</h3>
-                            <p>the 0-3 mess</p>
-                            <span>RD$1,099.99</span>
-                        </div>
-                        <div class="controles">
-                            <button class="menos" data-producto="1">-</button>
-                            <input type="number" value="1" min="1" data-producto="1">
-                            <button class="mas" data-producto="1">+</button>
-                        </div>
-                    </article>
-
-                    <article class="item-producto producto-2">
-                        <div class="imagen">
-                            <img src="../imagenes/producto-body-hym.png" alt="Body-Mon's the HyM cotton">
-                        </div>
-                        <div class="info">
-                            <h3>Body-Mon's the HyM cotton</h3>
-                            <p>the 0-3 mess</p>
-                            <span>RD$1,899.99</span>
-                        </div>
-                        <div class="controles">
-                            <button class="menos" data-producto="2">-</button>
-                            <input type="number" value="1" min="1" data-producto="2">
-                            <button class="mas" data-producto="2">+</button>
-                        </div>
-                    </article>
-
-                    <article class="item-producto producto-3">
-                        <div class="imagen">
-                            <img src="../imagenes/producto-conjunto-cinco-piezas.png" alt="Conjunto de cinco piezas">
-                        </div>
-                        <div class="info">
-                            <h3>Conjunto de cinco piezas</h3>
-                            <p>de 0-3 meses</p>
-                            <span>RD$1259.99</span>
-                        </div>
-                        <div class="controles">
-                            <button class="menos" data-producto="3">-</button>
-                            <input type="number" value="1" min="1" data-producto="3">
-                            <button class="mas" data-producto="3">+</button>
-                        </div>
-                    </article>
-
-                </div>
-
-                <aside class="resumen">
-                    <div class="tarjeta-resumen">
-                        <h2>Resumen de compra</h2>
-                        
-                        <div class="linea">
-                            <span>Subtotal (<span class="count-productos">3</span> productos)</span>
-                            <span id="subtotal">RD$1000</span>
-                        </div>
-                        
-                        <div class="linea">
-                            <span>Envio</span>
-                            <span id="envio">Gratis</span>
-                        </div>
-                        
-                        <div class="linea">
-                            <span>Impuestos (10%)</span>
-                            <span id="impuestos">RD$1000</span>
-                        </div>
-                        
-                        <div class="cupon">
-                            <input type="text" placeholder="Codigo promocional">
-                            <button>Aplicar</button>
-                        </div>
-                        
-                        <div class="total">
-                            <span>Total:</span>
-                            <span id="total">RD$1000</span>
-                        </div>
-                        
-                        <button class="btn-continuar">Continuar al envio</button>
-                    </div>
-                </aside>
-
+                <!-- Con Js Agregare Los Productos -->
             </div>
-            
             <div class="acciones-inferior">
                 <button class="btn-seguir">Seguir comprando</button>
             </div>
@@ -170,41 +97,42 @@
 
     </main>
 
-    <footer class="pie">
-        <div class="seccion-enlaces">
+       <footer class="pie-pagina">
+        <div class="contenedor-pie-pagina">
+            <div class="seccion-enlaces">
             <h3>Enlaces</h3>
             <ul>
-                <li><a href="articulo_info.html">Tienda</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="terminos-privacidad.html">Terminos y Privacidad</a></li>
+                <li><a href="pages/articulo_info.html">Tienda</a></li>
+                <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/terminos-privacidad.html">Términos y Privacidad</a></li>
             </ul>
         </div>
         <div class="seccion-contactos">
             <h3>Contactos</h3>
             <ul>
                 <li>
-                    Email: <a href="mailto:info@tiendacer.com">info@tiendacer.com</a>
+                   <span> Email:</span> <a href="#">info@tiendacer.com</a>
                 </li>
                 <li>
-                    Telefono: <a href="tel:+18000000000">+1 800-000-0000</a>
+                    <span>Teléfono: </span><a href="#">+1 800-000-0000</a>
                 </li>
                 <li>
-                    Direccion: Calle Falsa 123 Santiago
+                   <span> Dirección: <a href="">Ubicanos Aqui</a></span>
                 </li>
             </ul>
         </div>
         <div class="seccion-redes">
-            <h3>Siguenos</h3>
+            <h3>Síguenos</h3>
             <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">X</a></li>
             </ul>
         </div>
-        <div class="derechos">
-            <p>&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
         </div>
+        <div class="linea-division"></div>
+            <p class="derechos-autor">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
     </footer>
 
 </body>

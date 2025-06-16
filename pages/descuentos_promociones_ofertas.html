@@ -6,48 +6,61 @@
     <title>Tienda</title>
     <link rel="icon" href="../imagenes/icon.png" />
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/generales.css">
 </head>
 <body>
-    <header class="cabecera">
-        <div class="logo">
-            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer">
+     <header class="encabezado">
+        <div class="contenedor-encabezado">
+
+            <div class="logo">
+                <img src="../imagenes/icon.png" alt="">
+            </div>
+
+            <nav class="nav-principal">
+                <ul class="enlaces-nav">
+                    <li>
+                        <figure href="#" class="enlace-ubicacion">
+                            <img src="../imagenes/pin.svg" alt="">
+                        </figure>
+                    </li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="articulo_info.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="buscador-header">
+                <input type="text" placeholder=" Descubre su estilo...">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
+            <div class="acciones-nav-escritorio">
+                <ul class="iconos-nav-escritorio">
+                    <li>
+                        <a href="pages/carro_compras.html">
+                            <img src="../imagenes/card.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/registro.html">
+                            <img src="../imagenes/account.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="icono-busqueda-movil">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
         </div>
-        <nav class="navegacion">
-            <ul class="nav-principal">
-                <li>
-                    <a href="#" class="ubicacion">
-                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion">
-                    </a>
-                </li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-            <ul class="nav-iconos">
-                <li>
-                    <a href="#" class="buscar">
-                        <img src="../imagenes/search.svg" alt="Icono de busqueda">
-                    </a>
-                </li>
-                <li>
-                    <a href="carro_compras.html" class="carrito">
-                        <img src="../imagenes/card.svg" alt="Icono de carrito de compras">
-                    </a>
-                </li>
-                <li>
-                    <a href="registro.html" class="usuario">
-                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario">
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="tienda-principal">
         <section class="productos">
-            <article class="tarjeta producto-1">
-                <img src="../imagenes/producto-1.png" alt="Imagen de Camiseta Basica">
+            <article class="productos producto-1">
+                <img src="/-1.png" alt="">
                 <h3>Camiseta Basica</h3>
                 <p>
                     <span>$25.00</span>
@@ -57,8 +70,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-2">
-                <img src="../imagenes/producto-2.png" alt="Imagen de Camiseta Beige">
+            <article class="productos producto-2">
+                <img src="/" alt="">
                 <h3>Camiseta Beige</h3>
                 <p>
                     <span>$30.00</span>
@@ -68,8 +81,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-3">
-                <img src="../imagenes/producto-3.png" alt="Imagen de Camiseta Negra">
+            <article class="productos producto-3">
+                <img src="/-3.png" alt="">
                 <h3>Camiseta Negra</h3>
                 <p>
                     <span>$28.00</span>
@@ -79,8 +92,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-4">
-                <img src="../imagenes/producto-4.png" alt="Imagen de Camisa Azul">
+            <article class="productos producto-4">
+                <img src="/-4.png" alt="">
                 <h3>Camisa Azul</h3>
                 <p>
                     <span>$45.00</span>
@@ -90,8 +103,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-5">
-                <img src="../imagenes/producto-5.png" alt="Imagen de Playera Estampada">
+            <article class="productos producto-5">
+                <img src="/-5.png" alt="">
                 <h3>Playera Estampada</h3>
                 <p>
                     <span>$35.00</span>
@@ -101,8 +114,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-6">
-                <img src="../imagenes/producto-6.png" alt="Imagen de Short Negro">
+            <article class="productos producto-6">
+                <img src="/-6.png" alt="">
                 <h3>Short Negro</h3>
                 <p>
                     <span>$40.00</span>
@@ -112,8 +125,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-7">
-                <img src="../imagenes/producto-7.png" alt="Imagen de Jeans Clasicos">
+            <article class="productos producto-7">
+                <img src="/-7.png" alt="">
                 <h3>Jeans Clasicos</h3>
                 <p>
                     <span>$65.00</span>
@@ -123,8 +136,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-8">
-                <img src="../imagenes/producto-8.png" alt="Imagen de Pantalon Negro">
+            <article class="productos producto-8">
+                <img src="/-8.png" alt="">
                 <h3>Pantalon Negro</h3>
                 <p>
                     <span>$55.00</span>
@@ -134,8 +147,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-9">
-                <img src="../imagenes/producto-9.png" alt="Imagen de Pantalon Cargo">
+            <article class="productos producto-9">
+                <img src="/-9.png" alt="">
                 <h3>Pantalon Cargo</h3>
                 <p>
                     <span>$60.00</span>
@@ -145,8 +158,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-10">
-                <img src="../imagenes/producto-10.png" alt="Imagen de Pantalon Beige">
+            <article class="productos producto-10">
+                <img src="/-10.png" alt="">
                 <h3>Pantalon Beige</h3>
                 <p>
                     <span>$50.00</span>
@@ -156,8 +169,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-11">
-                <img src="../imagenes/producto-11.png" alt="Imagen de Pantalon Formal">
+            <article class="productos producto-11">
+                <img src="/-11.png" alt="">
                 <h3>Pantalon Formal</h3>
                 <p>
                     <span>$70.00</span>
@@ -167,8 +180,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-12">
-                <img src="../imagenes/producto-12.png" alt="Imagen de Camisa Tropical">
+            <article class="productos producto-12">
+                <img src="/-12.png" alt="">
                 <h3>Camisa Tropical</h3>
                 <p>
                     <span>$42.00</span>
@@ -178,8 +191,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-13">
-                <img src="../imagenes/producto-13.png" alt="Imagen de Playera Rosa">
+            <article class="productos producto-13">
+                <img src="/-13.png" alt="">
                 <h3>Playera Rosa</h3>
                 <p>
                     <span>$32.00</span>
@@ -189,8 +202,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-14">
-                <img src="../imagenes/producto-14.png" alt="Imagen de Top Blanco">
+            <article class="productos producto-14">
+                <img src=""  alt="">
                 <h3>Top Blanco</h3>
                 <p>
                     <span>$28.00</span>
@@ -200,8 +213,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-15">
-                <img src="../imagenes/producto-15.png" alt="Imagen de Blusa Estampada">
+            <article class="productos producto-15">
+                <img src="" alt="">
                 <h3>Blusa Estampada</h3>
                 <p>
                     <span>$38.00</span>
@@ -211,8 +224,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-16">
-                <img src="../imagenes/producto-16.png" alt="Imagen de Camisa Tropical">
+            <article class="productos producto-16">
+                <img src="" alt="">
                 <h3>Camisa Tropical</h3>
                 <p>
                     <span>$45.00</span>
@@ -222,8 +235,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-17">
-                <img src="../imagenes/producto-17.png" alt="Imagen de Zapatillas Azules">
+            <article class="productos producto-17">
+                <img src="" alt="">
                 <h3>Zapatillas Azules</h3>
                 <p>
                     <span>$85.00</span>
@@ -233,8 +246,8 @@
                 <button>Comprar Ahora</button>
             </article>
             
-            <article class="tarjeta producto-18">
-                <img src="../imagenes/producto-18.png" alt="Imagen de Zapatos Rojos">
+            <article class="productos producto-18">
+                <img src="" alt="">
                 <h3>Zapatos Rojos</h3>
                 <p>
                     <span>$90.00</span>
@@ -273,41 +286,42 @@
         </aside>
     </main>
 
-    <footer class="pie">
-        <div class="seccion-enlaces">
+        <footer class="pie-pagina">
+        <div class="contenedor-pie-pagina">
+            <div class="seccion-enlaces">
             <h3>Enlaces</h3>
             <ul>
-                <li><a href="articulo_info.html">Tienda</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="terminos-privacidad.html">Terminos y Privacidad</a></li>
+                <li><a href="pages/articulo_info.html">Tienda</a></li>
+                <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/terminos-privacidad.html">Términos y Privacidad</a></li>
             </ul>
         </div>
         <div class="seccion-contactos">
             <h3>Contactos</h3>
             <ul>
                 <li>
-                    Email: <a href="mailto:info@tiendacer.com">info@tiendacer.com</a>
+                   <span> Email:</span> <a href="#">info@tiendacer.com</a>
                 </li>
                 <li>
-                    Telefono: <a href="tel:+18000000000">+1 800-000-0000</a>
+                    <span>Teléfono: </span><a href="#">+1 800-000-0000</a>
                 </li>
                 <li>
-                    Direccion: Calle Falsa 123 Santiago
+                   <span> Dirección: <a href="">Ubicanos Aqui</a></span>
                 </li>
             </ul>
         </div>
         <div class="seccion-redes">
-            <h3>Siguenos</h3>
+            <h3>Síguenos</h3>
             <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">X</a></li>
             </ul>
         </div>
-        <div class="derechos">
-            <p>&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
         </div>
+        <div class="linea-division"></div>
+            <p class="derechos-autor">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
     </footer>
 
 </body>

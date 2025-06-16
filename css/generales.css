@@ -1,56 +1,14 @@
-/* ===== RESET Y BASE ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-/* ===== VARIABLES ===== */
-:root {
-    --color-primario: #9E116F;
-    --color-texto: #333;
-    --color-fondo: #fff;
-    --ancho-maximo: 90vw;
-    --altura-encabezado: 70px;
-    --transicion-suave: all 0.3s ease;
-}
-
-/* ===== ENCABEZADO ===== */
+@import url('variables.css');
+/* ===== Header ===== */
 .encabezado {
-    background: var(--color-fondo);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: var(--sombra-base);
     position: sticky;
     top: 0;
-    height: var(--altura-encabezado);
+    height: 80px;
     display: flex;
     justify-content: center;
+    z-index: 1000;
 }
 
 .contenedor-encabezado {
@@ -58,9 +16,9 @@ button {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    max-width: var(--ancho-maximo);
+    max-width: var(--pantalla-escritorio-xl);
     width: 100%;
-    padding: 0 1.5vw;
+    padding: 0 var(--espacio-entre-bloques);
 }
 
 .logo {
@@ -70,7 +28,7 @@ button {
 .logo img {
     height: 90px;
     width: auto;
-    transition: var(--transicion-suave);
+    transition: all 0.3s ease;
 }
 
 .logo img:hover {
@@ -78,30 +36,30 @@ button {
 }
 
 .nav-principal {
-    flex-grow: 1; /* Permite que la navegación principal ocupe espacio */
+    flex-grow: 1;
     display: flex;
     justify-content: center;
-    /* margin-left: 2rem; - ya no es necesario si el buscador va después */
 }
 
 .enlaces-nav {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: var(--espacio-entre-bloques);
     margin: 0;
 }
 
 .enlaces-nav a {
     font-weight: 500;
-    font-size: 1rem;
-    color: var(--color-texto);
-    transition: var(--transicion-suave);
-    padding: 0.5rem 0;
+    font-size: var(--texto-parrafo);
+    color: #333;
+    transition: all 0.3s ease;
+    padding: var(--espacio-etiquetas-e-iconos) 0;
     position: relative;
+    font-family: var(--fuente-principal);
 }
 
 .enlaces-nav a:hover {
-    color: var(--color-primario);
+    color: var(--color-principal);
 }
 
 .enlaces-nav a::after {
@@ -111,7 +69,7 @@ button {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--color-primario);
+    background: var(--color-principal);
     transition: width 0.3s ease;
 }
 
@@ -122,14 +80,16 @@ button {
 .enlace-ubicacion {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    padding:10px;
+    background: var(--color-rosa);
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background: rgba(158, 17, 111, 0.1);
-    transition: var(--transicion-suave);
 }
 
 .enlace-ubicacion:hover {
-    background: rgba(158, 17, 111, 0.2);
+    background: var(--color-principal-claro);
     transform: scale(1.1);
 }
 
@@ -138,24 +98,24 @@ button {
     height: 20px;
 }
 
-/* Buscador en el Header (Escritorio) */
+/* Buscador  del Header */
 .buscador-header {
-    display: flex; /* Visible por defecto en escritorio */
+    display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 25px;
-    padding: 8px 15px;
-    flex-grow: 1; /* Permite que ocupe el espacio a la derecha de nav-principal */
-    margin-left: 2rem; /* Espacio después de nav-principal */
-    max-width: 400px; /* Ancho máximo para el campo de búsqueda */
-    order: 3; /* Asegura que aparezca después de nav-principal */
+    padding: var(--espacio-etiquetas-e-iconos) var(--espacio-entre-productos);
+    flex-grow: 1;
+    margin-left: var(--espacio-entre-bloques);
+    max-width: 400px;
+    order: 3;
 }
 
 .buscador-header img {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: var(--espacio-etiquetas-e-iconos);
     opacity: 0.7;
 }
 
@@ -164,8 +124,9 @@ button {
     background: transparent;
     outline: none;
     width: 100%;
-    font-size: 1rem;
-    color: var(--color-texto);
+    font-size: var(--texto-parrafo);
+    color: #333;
+    font-family: var(--fuente-principal);
 }
 
 .buscador-header input::placeholder {
@@ -174,23 +135,23 @@ button {
 
 .acciones-nav-escritorio {
     flex-shrink: 0;
-    display: flex; /* Visible por defecto en escritorio */
+    display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-left: 2rem; /* Espacio después del buscador */
-    order: 4; /* Asegura que aparezca después del buscador */
+    gap: var(--espacio-entre-productos);
+    margin-left: var(--espacio-entre-bloques);
+    order: 4;
 }
 
 .iconos-nav-escritorio {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--espacio-entre-productos);
 }
 
 .iconos-nav-escritorio img {
     width: 28px;
     height: 28px;
-    transition: var(--transicion-suave);
+    transition: all 0.3s ease;
     opacity: 0.8;
 }
 
@@ -201,15 +162,15 @@ button {
 
 /* Ícono de búsqueda para el header superior en móvil */
 .icono-busqueda-movil {
-    display: none; /* Oculto por defecto en escritorio */
+    display: none;
     flex-shrink: 0;
-    margin-left: auto; /* Empuja el icono a la derecha en móvil */
+    margin-left: auto;
 }
 
 .icono-busqueda-movil img {
     width: 28px;
     height: 28px;
-    transition: var(--transicion-suave);
+    transition: all 0.3s ease;
     opacity: 0.8;
 }
 
@@ -218,119 +179,145 @@ button {
     transform: scale(1.1);
 }
 
-/* ===== NAVEGACIÓN MÓVIL (Barra inferior) ===== */
+/* ===== Nav Movil===== */
 .nav-movil {
-    display: none; /* Oculto por defecto en escritorio */
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-fondo);
+    background-color: #fff;
+    padding: 0;
+    z-index: 1000;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
 }
 
 .enlaces-nav-movil {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 60px;
 }
 
 .enlaces-nav-movil li {
-    flex-grow: 1;
-    text-align: center;
+    flex: 1;
+    display: flex;
 }
 
 .enlace-nav-movil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.75rem;
-    color: var(--color-texto);
-    padding: 0.3rem 0;
-    transition: var(--transicion-suave);
+    justify-content: center;
+    font-size: 10px;
+    color: #666;
+    padding: 8px 4px;
+    transition: all 0.2s ease;
+    font-family: var(--fuente-principal);
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
-.enlace-nav-movil:hover {
-    color: var(--color-primario);
+.enlace-nav-movil:hover,
+.enlace-nav-movil:focus,
+.enlace-nav-movil.activo {
+    background-color: var(--color-principal);
+    color: #ffffff;
 }
 
 .enlace-nav-movil img {
     width: 24px;
     height: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.enlace-nav-movil span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
 }
 
 /* ===== PIE DE PÁGINA ===== */
 .pie-pagina {
     background: #1a1a1a;
     color: white;
-    padding: 3rem 0 1rem;
+    padding: var(--margen-seccion-completa) 0 var(--espacio-entre-productos);
 }
 
 .contenedor-pie-pagina {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-width: var(--ancho-maximo);
-    gap: 2rem;
+    max-width: var(--pantalla-escritorio-xl);
+    gap: var(--espacio-entre-bloques);
     margin: 0 auto;
-    padding: 0 2rem 2rem;
+    padding: 0 var(--espacio-entre-bloques) var(--espacio-entre-bloques);
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
     align-items: start;
     justify-content: center;
+    margin-left:10vw;
 }
 
 .contenedor-pie-pagina h3 {
-    font-size:2rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-primario);
+    font-size: var(--texto-seccion);
+    margin-bottom: var(--espacio-entre-productos);
+    color: var(--color-principal);
     font-weight: 600;
+    font-family: var(--fuente-titulos);
 }
 
 .contenedor-pie-pagina ul {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: var(--espacio-etiquetas-e-iconos);
 }
 
 .contenedor-pie-pagina a {
     color: rgba(255, 255, 255, 0.8);
-    transition: var(--transicion-suave);
-    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    font-size: var(--texto-parrafo);
+    font-family: var(--fuente-principal);
 }
-.contenedor-pie-pagina span{
-    font-size: 1.35em;
+
+.contenedor-pie-pagina span {
+    font-size: var(--texto-titulo-card);
 }
 
 .contenedor-pie-pagina a:hover {
-    color: var(--color-primario);
+    color: var(--color-principal);
     padding-left: 5px;
 }
 
 .linea-division {
     height: 1px;
     background: rgba(255, 255, 255, 0.2);
-    margin: 2rem auto 1rem;
-    max-width: var(--ancho-maximo);
+    margin: var(--espacio-entre-bloques) auto var(--espacio-entre-productos);
+    max-width: var(--pantalla-escritorio-xl);
 }
 
 .derechos-autor {
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
-    padding: 0 2rem;
-    max-width: var(--ancho-maximo);
+    font-size: var(--texto-parrafo);
+    padding: 0 var(--espacio-entre-bloques);
+    max-width: var(--pantalla-escritorio-xl);
     margin: 0 auto;
+    font-family: var(--fuente-principal);
 }
 
-/* ===== DISEÑO RESPONSIVO ===== */
-
-/* Tablets */
 @media (max-width: 1024px) {
     .contenedor-encabezado {
-        padding: 0 1.5rem;
+        padding: 0 var(--espacio-entre-productos);
     }
     
     .logo img {
@@ -338,47 +325,42 @@ button {
     }
 
     .nav-principal {
-        margin-left: 1rem; /* Ajustar margen */
-        margin-right: 1rem;
+        margin-left: var(--espacio-entre-productos);
+        margin-right: var(--espacio-entre-productos);
     }
 
     .buscador-header {
-        max-width: 350px; /* Ajuste para tablets */
-        margin-left: 1.5rem;
+        max-width: 350px;
+        margin-left: var(--espacio-entre-productos);
     }
 
     .acciones-nav-escritorio {
-        margin-left: 1.5rem;
-        gap: 0.8rem;
+        margin-left: var(--espacio-entre-productos);
+        gap: var(--espacio-etiquetas-e-iconos);
     }
 
     .iconos-nav-escritorio {
-        gap: 1rem;
+        gap: var(--espacio-entre-productos);
     }
 
     .contenedor-pie-pagina {
         margin: 0 auto;
-        padding: 0 1.5rem 2rem;
-    }
-    
-    .copy {
-        padding: 0 1.5rem;
+        padding: 0 var(--espacio-entre-productos) var(--espacio-entre-bloques);
     }
 }
 
-/* Móviles (hasta 768px) */
 @media (max-width: 768px) {
-    :root {
-        --altura-encabezado: 60px;
+    .encabezado {
+        height: 60px;
     }
     
     body {
-        padding-bottom: 75px; /* Asegura espacio para la nav inferior */
+        padding-bottom: 60px;
     }
 
     .contenedor-encabezado {
-        padding: 0 1rem;
-        justify-content: space-between; /* Mantiene logo a izquierda y acciones a derecha */
+        padding: 0 var(--espacio-entre-productos);
+        justify-content: space-between;
     }
     
     .logo img {
@@ -386,36 +368,38 @@ button {
     }
     
     .nav-principal {
-        display: none; /* Oculta la navegación principal de escritorio */
+        display: none;
     }
-    
-
 
     .acciones-nav-escritorio {
-        display: none; /* Oculta todos los íconos de acción de escritorio en móvil */
+        display: none;
     }
 
     .nav-movil {
-        display: flex; /* Muestra la navegación móvil en la parte inferior */
+        display: flex;
     }
 }
 
-/* Móviles pequeños (opcional, si necesitas ajustes muy finos) */
 @media (max-width: 480px) {
     .contenedor-encabezado {
-        padding: 0 0.5rem;
+        padding: 0 var(--espacio-etiquetas-e-iconos);
     }
     
     .logo img {
         height: 40px;
     }
     
-    .nav-movil .enlace-nav-movil {
-        font-size: 0.7rem;
+    .enlace-nav-movil {
+        font-size: 9px;
+        padding: 6px 2px;
     }
 
-    .nav-movil .enlace-nav-movil img {
-        width: 20px;
-        height: 20px;
+    .enlace-nav-movil img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .enlaces-nav-movil {
+        height: 55px;
     }
 }

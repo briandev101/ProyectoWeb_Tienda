@@ -6,40 +6,61 @@
     <title>Mi Perfil de Usuario</title>
     <link rel="icon" href="../imagenes/icon.png" />
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/generales.css">
 </head>
 <body>
-    <header class="cabecera">
-        <div class="logo">
-            <img src="../imagenes/icon.png" alt="Logo de Tienda Cer">
+ <header class="encabezado">
+        <div class="contenedor-encabezado">
+
+            <div class="logo">
+                <img src="../imagenes/icon.png" alt="">
+            </div>
+
+            <nav class="nav-principal">
+                <ul class="enlaces-nav">
+                    <li>
+                        <figure href="#" class="enlace-ubicacion">
+                            <img src="../imagenes/pin.svg" alt="">
+                        </figure>
+                    </li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="articulo_info.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="buscador-header">
+                <input type="text" placeholder=" Descubre su estilo...">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
+            <div class="acciones-nav-escritorio">
+                <ul class="iconos-nav-escritorio">
+                    <li>
+                        <a href="pages/carro_compras.html">
+                            <img src="../imagenes/card.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/registro.html">
+                            <img src="../imagenes/account.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="icono-busqueda-movil">
+                <img src="../imagenes/search.svg" alt="">
+            </div>
+
         </div>
-        <nav class="navegacion">
-            <ul class="nav-principal">
-                <li>
-                    <a href="#" class="ubicacion">
-                        <img src="../imagenes/pin.svg" alt="Icono de ubicacion">
-                    </a>
-                </li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-            <ul class="nav-iconos">
-                <li><img src="../imagenes/search.svg" alt="Icono de busqueda"></li>
-                <li><img src="../imagenes/card.svg" alt="Icono de carrito de compras"></li>
-                <li>
-                    <a href="registro.html" class="usuario">
-                        <img src="../imagenes/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de usuario">
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="perfil">
         <section class="perfil-usuario">
             <figure class="usuario-foto">
-                <img src="../imagenes/placeholder-usuario.png" alt="Foto de perfil de usuario" width="120" height="120">
+                <img src="../imagenes/placeholder-usuario.png" alt="" width="120" height="120">
                 <figcaption>(Nombre de Usuario)</figcaption>
             </figure>
             <p>Ultimo inicio de sesion: <span></span></p>
@@ -161,41 +182,42 @@
         </section>
     </main>
 
-    <footer class="pie">
-        <div class="seccion-enlaces">
+        <footer class="pie-pagina">
+        <div class="contenedor-pie-pagina">
+            <div class="seccion-enlaces">
             <h3>Enlaces</h3>
             <ul>
-                <li><a href="articulo_info.html">Tienda</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="terminos-privacidad.html">Terminos y Privacidad</a></li>
+                <li><a href="pages/articulo_info.html">Tienda</a></li>
+                <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/terminos-privacidad.html">Términos y Privacidad</a></li>
             </ul>
         </div>
         <div class="seccion-contactos">
             <h3>Contactos</h3>
             <ul>
                 <li>
-                    Email: <a href="mailto:info@tiendacer.com">info@tiendacer.com</a>
+                   <span> Email:</span> <a href="#">info@tiendacer.com</a>
                 </li>
                 <li>
-                    Telefono: <a href="tel:+18000000000">+1 800-000-0000</a>
+                    <span>Teléfono: </span><a href="#">+1 800-000-0000</a>
                 </li>
                 <li>
-                    Direccion: Calle Falsa 123 Santiago
+                   <span> Dirección: <a href="">Ubicanos Aqui</a></span>
                 </li>
             </ul>
         </div>
         <div class="seccion-redes">
-            <h3>Siguenos</h3>
+            <h3>Síguenos</h3>
             <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">X</a></li>
             </ul>
         </div>
-        <div class="derechos">
-            <p>&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
         </div>
+        <div class="linea-division"></div>
+            <p class="derechos-autor">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
     </footer>
 
 </body>
