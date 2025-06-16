@@ -128,7 +128,8 @@ border-radius: var(--borde-redondeado);
 .seccion-razones h2{
 color: #F4F3EE;
 margin: 15px 0;
-font-size: var();
+font-size: var(--texto-hero);
+padding-top: 20px;
 }
 .seccion-razones .contenedor-tarjetas-razon{
   display: flex;
@@ -159,3 +160,41 @@ font-size: var();
   display: none;
 }
 
+.seccion-suscripcion{
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-suscripcion button{
+    background-color: var(--color-principal);
+      color: white;
+      border: none;
+      border-radius:50px;
+      cursor: pointer;
+      font-size: var(--texto-boton);
+      font-family: var(--fuente-principal);
+      width: 150px;
+      height:50px;
+}
+
+.seccion-suscripcion h2{
+  font-size: var(--texto-hero);
+}
+
+.seccion-suscripcion p{
+  font-size: var(--texto-boton);
+  font-weight: 600;
+}
+
+.seccion-suscripcion [placeholder] {
+  width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    border-color:rgba(0, 0, 0, 0.251);
+    text-align: center;
+}

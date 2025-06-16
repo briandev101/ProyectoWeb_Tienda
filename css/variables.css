@@ -54,8 +54,8 @@
   --boton-texto: #ffffff;
   --boton-hover-fondo: var(--color-principal);
   --boton-hover-texto: #ffffff;
-  --boton-ancho: 180px;
-  --boton-alto: 45px;
+  --boton-ancho: 160px;
+  --boton-alto: 40px;
 
   /* ==================================================
    Resolución de los dispositivos
