@@ -369,3 +369,6 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+h2{
+  margin: 0;
+}
