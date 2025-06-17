@@ -1,0 +1,131 @@
+@import url('variables.css');
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+}
+
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================================== */
+.principal {
+  display: flex;
+  height: 100vh;
+}
+
+/* ==========================================================================
+   SECCIÓN DE INFORMACIÓN (LADO IZQUIERDO)
+   ========================================================================== */
+.informacion {
+  flex: 1;
+  padding: var(--margen-seccion-completa) var(--margen-seccion-completa);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.informacion h1 {
+  font-size: var(--texto-hero);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: var(--margen-seccion-completa);
+  max-width: 500px;
+}
+
+.informacion h1 span {
+  font-weight: 700;
+}
+
+.informacion img {
+  display: block;
+  position: relative;
+  margin-bottom: var(--espacio-entre-bloques);
+}
+
+/* ==========================================================================
+   SECCIÓN DE FORMULARIO DE REGISTRO (LADO DERECHO)
+   ========================================================================== */
+.formulario-registro {
+  flex: 1;
+  min-height: 100vh;
+  padding: var(--margen-seccion-completa) var(--margen-seccion-completa);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-registro img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0 50% 0 0;
+  bottom: 1px;
+}
+
+.campo-nombre, 
+.campo-apellido, 
+.campo-correo, 
+.campo-contrasena, 
+.campo-rep-contrasena {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-etiquetas-e-iconos);
+}
+
+.formulario input {
+  padding: var(--espacio-interno-botones) calc(var(--espacio-interno-botones) + 0.25rem);
+  border: 1px solid #E2E8F0;
+  border-radius: var(--borde-redondeado);
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: var(--color-principal-oscuro);
+  box-shadow: 0 0 0 3px rgba(124, 45, 146, 0.1);
+}
+
+/* ==========================================================================
+   BOTÓN DE ENVÍO Y ENLACES
+   ========================================================================== */
+
+.formulario button {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  color: var(--boton-texto);
+  padding: var(--espacio-interno-botones) 200px;
+  border: none;
+  border-radius: var(--borde-redondeado);
+  font-size: var(--texto-boton);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--espacio-etiquetas-e-iconos);
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-hover);
+}
+
+.formulario-registro > p {
+  text-align: center;
+  margin-top: var(--espacio-entre-bloques);
+  color: #64748B;
+  font-size: var(--texto-etiqueta);
+}
+
+.formulario-registro > p a {
+  color: var(--color-principal-oscuro);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.formulario-registro > p a:hover {
+  text-decoration: underline;
+}
