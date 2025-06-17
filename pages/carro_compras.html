@@ -7,6 +7,7 @@
     <link rel="icon" href="../imagenes/icon.png" />
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/generales.css">
+    <link rel="stylesheet" href="../css/card.css">
 </head>
 <body>
 
@@ -91,45 +92,61 @@
             </li>
         </ul>
     </nav>
-    <main class="principal">
-        
-        <section class="titulo-pagina">
-            <div class="header-pagina">
+     
+        <section class="menu-principal">
+            <div class="titulo">
                 <h1>Tu Carrito de Compras</h1>
                 <p>Revisa y completa tu compra</p>
             </div>
             
             <div class="pasos">
-                <div class="paso paso-1 activo">
-                    <span>1</span>
+                <div class="paso paso-1">
+                    <span class="paso-N activo">1</span>
                     <span>Carrito</span>
                 </div>
                 <div class="paso paso-2">
-                    <span>2</span>
+                    <span class="paso-N">2</span>
                     <span>Envio</span>
                 </div>
                 <div class="paso paso-3">
-                    <span>3</span>
+                    <span class="paso-N">3</span>
                     <span>Pago</span>
                 </div>
                 <div class="paso paso-4">
-                    <span>4</span>
+                    <span class="paso-N">4</span>
                     <span>Confirmacion</span>
                 </div>
             </div>
         </section>
-
+    <main class="principal">
         <section class="seccion-carrito">
             <div class="contenido-carrito">
                 <!-- Con Js Agregare Los Productos -->
             </div>
-            <div class="acciones-inferior">
-                <button class="btn-seguir">Seguir comprando</button>
-            </div>
         </section>
-
+        <aside class="menu-derecho">
+            <h2>Resumen de compra</h2>
+            <div class="info">
+                <div class="datos">
+                   <p>Subtotal</p><span class="cantidad"></span><span class="Presio"></span>
+                </div>
+               <div class="datos">
+                <p>Envio<span class="envio"></span></p>     
+               </div>
+                <div class="datos">
+                    <p>Inpuestos</p><span class="inpuestos">RD$</span><span class="cantidad-inpuesto"></span>
+                </div>
+            </div>
+            <div class="accion">
+                <input type="text" placeholder="Código promocional"><input type="button" value="Aplicar" id="buton1">
+                <p>Total:<span class="total-compra"></span></p>
+                <input type="button" value="Continuar al envio" id="buton2">
+            </div>
+        </aside>            
     </main>
-
+<aside>
+     <button class="btn-seguir">Seguir comprando</button>
+</aside>
        <footer class="pie-pagina">
         <div class="contenedor-pie-pagina">
             <div class="seccion-enlaces">

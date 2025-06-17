@@ -48,7 +48,7 @@
     --categoria-alto-img: 116px;
 
   /* ==================================================
-    Botones
+    Botones Principales
   ================================================== */
   --boton-fondo: var(--color-principal-oscuro);
   --boton-texto: #ffffff;
@@ -56,6 +56,14 @@
   --boton-hover-texto: #ffffff;
   --boton-ancho: 160px;
   --boton-alto: 40px;
+/* Boton Secundario */
+  --boton-fondo2:#5168fc;
+    --boton-texto2: #ffffff;
+    --boton-hover-fondo2: var(--color-principal);
+    --boton-hover-texto2: #ffffff;
+    --boton-ancho2: 180px;
+    --boton-alto2: 40px;
+    --borde-redondeado2:15px;
 
   /* ==================================================
    Resolución de los dispositivos
@@ -79,6 +87,5 @@
   --razones-targetas-h: 261px;
   --razones-targetas-img-w: 114.53px;
   --razones-targetas-img-h: 114.58px;
-
 
 }
