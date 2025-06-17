@@ -17,6 +17,7 @@ main{
     color: white;
     padding: 20px 0;
     box-sizing: border-box;
+    
 }
 
 .titulo,
@@ -137,4 +138,34 @@ font-size: 27px;
 
 .datos{
     margin-bottom: 10px;
+}
+
+.contenido-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.496);
+}
+
+@media (max-width:768px) {
+    main{
+       display: block;
+    }
+
+   .paso-1 .paso-N::before {
+
+       width: 60vw;
+   }
+}
+
+@media (max-width:480px) {
+    main {
+        display: block;
+    }
+
+    .paso-1 .paso-N::before {
+
+        width: 50vw;
+    }
 }
