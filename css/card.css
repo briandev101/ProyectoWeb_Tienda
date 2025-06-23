@@ -148,24 +148,3 @@ font-size: 27px;
     color: rgba(0, 0, 0, 0.496);
 }
 
-@media (max-width:768px) {
-    main{
-       display: block;
-    }
-
-   .paso-1 .paso-N::before {
-
-       width: 60vw;
-   }
-}
-
-@media (max-width:480px) {
-    main {
-        display: block;
-    }
-
-    .paso-1 .paso-N::before {
-
-        width: 50vw;
-    }
-}

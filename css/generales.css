@@ -1,4 +1,5 @@
 @import url('variables.css');
+@import url('normalize.css');
 /* ===== Header ===== */
 .encabezado {
     background: #fff;

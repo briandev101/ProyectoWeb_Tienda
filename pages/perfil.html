@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil de Usuario</title>
     <link rel="icon" href="../imagenes/icon.png" />
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/generales.css">
+    <link rel="stylesheet" href="../css/perfil.css">
 </head>
 <body>
- <header class="encabezado">
+    <header class="encabezado">
         <div class="contenedor-encabezado">
-
             <div class="logo">
-                <img src="../imagenes/icon.png" alt="">
+                <img src="../imagenes/icon.png" alt="Logo">
             </div>
 
             <nav class="nav-principal">
                 <ul class="enlaces-nav">
-                    <li>
-                        <figure href="#" class="enlace-ubicacion">
-                            <img src="../imagenes/pin.svg" alt="">
-                        </figure>
-                    </li>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="articulo_info.html">Tienda</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -31,227 +25,220 @@
             </nav>
             
             <div class="buscador-header">
-                <input type="text" placeholder=" Descubre su estilo...">
-                <img src="../imagenes/search.svg" alt="">
+                <input type="text" placeholder="Descubre tu estilo...">
+                <img src="../imagenes/search.svg" alt="Buscar">
             </div>
 
             <div class="acciones-nav-escritorio">
                 <ul class="iconos-nav-escritorio">
                     <li>
                         <a href="carro_compras.html">
-                            <img src="../imagenes/card.svg" alt="">
+                            <img src="../imagenes/card.svg" alt="Carrito">
                         </a>
                     </li>
                     <li>
                         <a href="registro.html">
-                            <img src="../imagenes/account.svg" alt="">
+                            <img src="../imagenes/account.svg" alt="Cuenta">
                         </a>
                     </li>
                 </ul>
             </div>
-            
-            <div class="icono-busqueda-movil">
-                <img src="../imagenes/search.svg" alt="">
-            </div>
-
         </div>
     </header>
-<nav class="nav-movil">
-        <ul class="enlaces-nav-movil">
-            <li>
-                <a href="../Index.html" class="enlace-nav-movil">
-                    <img src="../imagenes/home.svg" alt="">
-                    <span>Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="articulo_info.html" class="enlace-nav-movil">
-                    <img src="../imagenes/store.svg" alt="">
-                    <span>Tienda</span>
-                </a>
-            </li>
-            <li>
-                <a href="carro_compras.html" class="enlace-nav-movil">
-                    <img src="../imagenes/card.svg" alt="">
-                    <span>Carrito</span>
-                </a>
-            </li>
-            <li>
-                <a href="registro.html" class="enlace-nav-movil">
-                    <img src="../imagenes/account.svg" alt="">
-                    <span>Cuenta</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="enlace-nav-movil">
-                    <img src="../imagenes/pin.svg" alt="">
-                    <span>Ubicación</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <main class="perfil">
-        <section class="perfil-usuario">
-            <figure class="usuario-foto">
-                <img src="../imagenes/placeholder-usuario.png" alt="" width="120" height="120">
-                <figcaption>(Nombre de Usuario)</figcaption>
-            </figure>
-            <p>Ultimo inicio de sesion: <span></span></p>
+
+    <main class="perfil-container">
+        <section class="perfil-header">
+            <div class="usuario-foto">
+                <img src="../imagenes/placeholder-usuario.png" alt="Foto de perfil" width="120" height="120">
+            </div>
+            <h1 class="usuario-nombre">Nombre de Usuario</h1>
+            <p class="ultimo-acceso">Último inicio de sesión: 18 de junio, 2025</p>
         </section>
 
-        <section class="perfil-info">
-            <h2>Informacion Personal</h2>
-            <ul class="lista-info">
-                <li>
-                    <span>Nombre completo:</span> (Nombre Completo del Usuario)
-                </li>
-                <li>
-                    <span>Correo Electronico:</span> (correo@ejemplo.com)
-                </li>
-                <li>
-                    <span>Numero de Telefono:</span> (+1 809 123 4567)
-                </li>
-                <li>
-                    <span>Fecha de Nacimiento:</span> (DD/MM/AAAA)
-                </li>
-                <li>
-                    <span>Genero:</span> (Preferir no decir / Masculino / Femenino / Otro)
-                </li>
-                <li>
-                    <span>Pais:</span> Republica Dominicana
-                </li>
-                <li>
-                    <span>Ciudad:</span> Santiago de los Caballeros
-                </li>
-            </ul>
-            <a href="#">Editar Informacion de Perfil</a>
-        </section>
-
-        <section class="perfil-compras">
-            <h2>Mis Compras</h2>
-
-            <article class="pedido pedido-1">
-                <h3>Pedido #12345</h3>
-                <ul class="lista-detalles">
-                    <li>
-                        <span>Fecha:</span> 13 de febrero, 2025
-                    </li>
-                    <li>
-                        <span>Articulos:</span> 2 x Collar de ceramica, 1 x Tapiz de pared
-                    </li>
-                    <li>
-                        <span>Total:</span> $150.00
-                    </li>
-                    <li>
-                        <span>Estado:</span> Entregado
-                    </li>
-                </ul>
-                <a href="#">Ver Detalles del Pedido</a>
-            </article>
-
-            <article class="pedido pedido-2">
-                <h3>Pedido #67890</h3>
-                <ul class="lista-detalles">
-                    <li>
-                        <span>Fecha:</span> 25 de abril, 2025
-                    </li>
-                    <li>
-                        <span>Articulos:</span> 1 x Escultura de madera
-                    </li>
-                    <li>
-                        <span>Total:</span> $85.50
-                    </li>
-                    <li>
-                        <span>Estado:</span> Enviado
-                    </li>
-                </li>
-                </ul>
-                <a href="#">Ver Detalles del Pedido</a>
-            </article>
-
-            <a href="#" class="ver-todas">Ver Todas Mis Compras</a>
-        </section>
-
-        <section class="perfil-direcciones">
-            <h2>Direcciones de Envio</h2>
-            <article class="direccion direccion-1">
-                <h3>Direccion Principal</h3>
-                <address>
-                    Calle 1, No. 123<br>
-                    Sector Modelo<br>
-                    Santiago de los Caballeros, 51000<br>
-                    Republica Dominicana
-                </address>
-                <div class="acciones-direccion">
-                    <a href="#">Editar</a> | <a href="#">Eliminar</a>
+        <section class="seccion">
+            <header class="seccion-header">
+                <h2 class="seccion-title">Información Personal</h2>
+            </header>
+            <div class="seccion-content">
+                <div class="info-item">
+                    <span class="info-label">Nombre completo:</span>
+                    <span class="info-value">Juan Carlos Pérez</span>
                 </div>
-            </article>
-            <a href="#" class="agregar-direccion">Agregar Nueva Direccion</a>
-        </section>
-
-        <section class="perfil-pagos">
-            <h2>Metodos de Pago</h2>
-            <article class="pago pago-1">
-                <h3>Tarjeta de Credito</h3>
-                <p>Visa **** **** **** 1234</p>
-                <p>Expira: 12/27</p>
-                <div class="acciones-pago">
-                    <a href="#">Editar</a> | <a href="#">Eliminar</a>
+                <div class="info-item">
+                    <span class="info-label">Correo electrónico:</span>
+                    <span class="info-value">juan.perez@ejemplo.com</span>
                 </div>
-            </article>
-            <a href="#" class="agregar-pago">Agregar Nuevo Metodo de Pago</a>
+                <div class="info-item">
+                    <span class="info-label">Número de teléfono:</span>
+                    <span class="info-value">+1 809 123 4567</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Fecha de nacimiento:</span>
+                    <span class="info-value">15/03/1990</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Género:</span>
+                    <span class="info-value">Masculino</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">País:</span>
+                    <span class="info-value">República Dominicana</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Ciudad:</span>
+                    <span class="info-value">Santiago de los Caballeros</span>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-outline">Editar Información</a>
+                </div>
+            </div>
         </section>
 
-        <section class="perfil-config">
-            <h2>Configuracion de la Cuenta</h2>
-            <nav class="config-nav">
-                <ul>
-                    <li><a href="#">Cambiar Contrasena</a></li>
-                    <li><a href="#">Administrar Sesiones Activas</a></li>
-                    <li><a href="#">Eliminar Cuenta</a></li>
-                    <li><a href="#">Cerrar Sesion</a></li>
+        <section class="seccion">
+            <header class="seccion-header">
+                <h2 class="seccion-title">Mis Compras</h2>
+            </header>
+            <div class="seccion-content">
+                <div class="compra-card">
+                    <div class="compra-header">
+                        <span class="orden-numero">Orden #12345</span>
+                        <span class="estado">Enviado</span>
+                    </div>
+                    <div class="compra-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Fecha</div>
+                            <div class="detail-value">01/01/2025</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Total</div>
+                            <div class="detail-value">RD$ 2,500.00</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Artículos</div>
+                            <div class="detail-value">3 items</div>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn-link">Ver Detalles</a>
+                        <a href="#" class="btn-link">Repetir Compra</a>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-outline">Ver Todas Mis Compras</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <header class="seccion-header">
+                <h2 class="seccion-title">Direcciones de Envío</h2>
+            </header>
+            <div class="seccion-content">
+                <div class="address-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Dirección Principal</h3>
+                        <div class="card-actions">
+                            <a href="#">Editar</a>
+                            <a href="#">Eliminar</a>
+                        </div>
+                    </div>
+                    <address style="font-style: normal; color: var(--color-texto-secundario); line-height: 1.6;">
+                        Calle 1, No. 123<br>
+                        Sector Modelo<br>
+                        Santiago de los Caballeros, 51000<br>
+                        República Dominicana
+                    </address>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-outline">Agregar Nueva Dirección</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <header class="seccion-header">
+                <h2 class="seccion-title">Métodos de Pago</h2>
+            </header>
+            <div class="seccion-content">
+                <div class="payment-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Tarjeta de Crédito</h3>
+                        <div class="card-actions">
+                            <a href="#">Editar</a>
+                            <a href="#">Eliminar</a>
+                        </div>
+                    </div>
+                    <p style="color: var(--color-texto-secundario); margin: 0.5rem 0;">Visa **** **** **** 1234</p>
+                    <p style="color: var(--color-texto-secundario); margin: 0;">Expira: 12/27</p>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-outline">Agregar Nuevo Método de Pago</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <header class="seccion-header">
+                <h2 class="seccion-title">Configuración de la Cuenta</h2>
+            </header>
+            <div class="seccion-content">
+                <ul class="config-menu">
+                    <li class="config-item">
+                        <a href="#" class="config-link">Cambiar Contraseña</a>
+                    </li>
+                    <li class="config-item">
+                        <a href="#" class="config-link">Administrar Sesiones Activas</a>
+                    </li>
+                    <li class="config-item">
+                        <a href="#" class="config-link">Notificaciones y Privacidad</a>
+                    </li>
+                    <li class="config-item">
+                        <a href="#" class="config-link danger">Eliminar Cuenta</a>
+                    </li>
+                    <li class="config-item">
+                        <a href="#" class="config-link">Cerrar Sesión</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </section>
     </main>
 
-        <footer class="pie-pagina">
+    <footer class="pie-pagina">
         <div class="contenedor-pie-pagina">
             <div class="seccion-enlaces">
-            <h3>Enlaces</h3>
-            <ul>
-                <li><a href="articulo_info.html">Tienda</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="terminos-privacidad.html">Términos y Privacidad</a></li>
-            </ul>
-        </div>
-        <div class="seccion-contactos">
-            <h3>Contactos</h3>
-            <ul>
-                <li>
-                   <span> Email:</span> <a href="#">info@tiendacer.com</a>
-                </li>
-                <li>
-                    <span>Teléfono: </span><a href="#">+1 800-000-0000</a>
-                </li>
-                <li>
-                   <span> Dirección: <a href="">Ubicanos Aqui</a></span>
-                </li>
-            </ul>
-        </div>
-        <div class="seccion-redes">
-            <h3>Síguenos</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">X</a></li>
-            </ul>
-        </div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="articulo_info.html">Tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="terminos-privacidad.html">Términos y Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="seccion-contactos">
+                <h3>Contactos</h3>
+                <ul>
+                    <li>
+                        <span>Email:</span> <a href="#">info@tiendacer.com</a>
+                    </li>
+                    <li>
+                        <span>Teléfono:</span> <a href="#">+1 800-000-0000</a>
+                    </li>
+                    <li>
+                        <span>Dirección:</span> <a href="#">Ubícanos Aquí</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seccion-redes">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </div>
         </div>
         <div class="linea-division"></div>
-            <p class="derechos-autor">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
+        <p class="derechos-autor">&copy; 2025 Tienda Cer. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>

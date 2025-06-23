@@ -7,17 +7,12 @@ body {
 }
 
 
-/* ==========================================================================
-   CONTENEDOR PRINCIPAL
-   ========================================================================== */
 .principal {
   display: flex;
   height: 100vh;
 }
 
-/* ==========================================================================
-   SECCIÓN DE INFORMACIÓN (LADO IZQUIERDO)
-   ========================================================================== */
+
 .informacion {
   flex: 1;
   padding: var(--margen-seccion-completa) var(--margen-seccion-completa);
@@ -47,9 +42,7 @@ body {
   margin-bottom: var(--espacio-entre-bloques);
 }
 
-/* ==========================================================================
-   SECCIÓN DE FORMULARIO DE REGISTRO (LADO DERECHO)
-   ========================================================================== */
+
 .formulario-registro {
   flex: 1;
   min-height: 100vh;
@@ -91,9 +84,6 @@ body {
   box-shadow: 0 0 0 3px rgba(124, 45, 146, 0.1);
 }
 
-/* ==========================================================================
-   BOTÓN DE ENVÍO Y ENLACES
-   ========================================================================== */
 
 .formulario button {
   background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
