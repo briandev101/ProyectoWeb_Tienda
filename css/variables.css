@@ -1,0 +1,68 @@
+:root {
+  /* ==================================================
+   Paleta de colores
+  ================================================== */
+  --color-principal: #A855F7;
+  --color-principal-claro: #C084FC;
+  --color-principal-oscuro: #7C2D92;
+  --color-rosa: #F8BBD9;
+  --color-azul: #4F46E5;
+  --color-verde: #22C55E;
+  --color-amarillo: #FCD34D;
+  --color-rojo: #EF4444;
+
+  /* ==================================================
+   Tipogafía
+  ================================================== */
+  --fuente-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --fuente-titulos: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --texto-etiqueta: 0.875rem;
+  --texto-parrafo: 1.125rem;
+  --texto-boton: 1.25rem;
+  --texto-titulo-card: 1.5rem;
+  --texto-hero: 3rem;
+
+  /* ==================================================
+     Espacios 
+  ================================================== */
+  --espacio-etiquetas-e-iconos: 0.75rem;
+  --espacio-interno-botones: 1rem;
+  --espacio-entre-productos: 1.5rem;
+  --espacio-entre-bloques: 2rem;
+  --margen-seccion-completa: 3rem;
+
+  /* ==================================================
+   Productos
+  ================================================== */
+  --producto-ancho-card: 405px;
+  --producto-alto-card: 525px;
+  --producto-ancho-img: 270px;
+  --producto-alto-img: 364px;
+  --producto-tamaño-precio: var(--texto-titulo-card);
+
+  /* ==================================================
+    Botones
+  ================================================== */
+  --boton-fondo: var(--color-principal-oscuro);
+  --boton-texto: #ffffff;
+  --boton-hover-fondo: var(--color-principal);
+  --boton-hover-texto: #ffffff;
+  --boton-ancho: 180px;
+  --boton-alto: 45px;
+
+  /* ==================================================
+   Resolución de los dispositivos
+  ================================================== */
+  --pantalla-mobile: 480px;
+  --pantalla-tablet: 768px;
+  --pantalla-escritorio: 1024px;
+  --pantalla-escritorio-lg: 1280px;
+  --pantalla-escritorio-xl: 1920px;
+
+  /* ==================================================
+     Sombras y Bordes
+  ================================================== */
+  --borde-redondeado: 6px;
+  --sombra-base: 0 6px 12px -2px rgba(0, 0, 0, 0.08);
+  --sombra-hover: 0 12px 20px -4px rgba(0, 0, 0, 0.1);
+}
