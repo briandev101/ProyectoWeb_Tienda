@@ -234,4 +234,288 @@ padding-top: 20px;
     border-radius: 100px;
     border-color:rgba(0, 0, 0, 0.251);
     text-align: center;
+}@media (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .contenedor-hero {
+    max-width: 70%;
+    margin: 0 0 3vh 3vh;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    max-width: 90%;
+  }
+  
+  .seccion-categorias {
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .seccion-categorias article {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .seccion-razones {
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .seccion-razones .contenedor-tarjetas-razon {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .galeria-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    max-width: 90vw;
+  }
+  
+  .seccion-suscripcion [placeholder] {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contenedor-hero {
+    max-width: 85%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: calc(var(--texto-hero) * 0.8);
+    text-align: center;
+  }
+  
+  .hero p {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .seccion-categorias {
+    padding: 30px 15px;
+  }
+  
+  .seccion-categorias h2 {
+    font-size: calc(var(--texto-hero) * 0.8);
+    margin: 30px 0;
+  }
+  
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .seccion-categorias article {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+  
+  .seccion-razones {
+    padding: 30px 15px;
+  }
+  
+  .seccion-razones h2 {
+    font-size: calc(var(--texto-hero) * 0.8);
+    padding-top: 15px;
+  }
+  
+  .seccion-razones .contenedor-tarjetas-razon {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seccion-razones .tarjeta-razon {
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  
+  .seccion-marcas {
+    padding: 40px 15px;
+  }
+  
+  .seccion-marcas h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .galeria-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    max-width: 95vw;
+  }
+  
+  .seccion-suscripcion {
+    height: auto;
+    padding: 30px 15px;
+  }
+  
+  .seccion-suscripcion h2 {
+    font-size: calc(var(--texto-hero) * 0.8);
+  }
+  
+  .seccion-suscripcion [placeholder] {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .seccion-suscripcion button {
+    width: 130px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    padding: 1rem;
+  }
+  
+  .contenedor-hero {
+    max-width: 95%;
+  }
+  
+  .hero h1 {
+    font-size: calc(var(--texto-hero) * 0.7);
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: calc(var(--texto-parrafo) * 0.9);
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    width: calc(var(--boton-ancho) * 0.9);
+    height: calc(var(--boton-alto) * 0.9);
+    font-size: calc(var(--texto-boton) * 0.9);
+  }
+  
+  .seccion-categorias h2 {
+    font-size: calc(var(--texto-hero) * 0.7);
+    margin: 20px 0;
+  }
+  
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .seccion-categorias article {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .seccion-razones h2 {
+    font-size: calc(var(--texto-hero) * 0.7);
+  }
+  
+  .seccion-razones .tarjeta-razon {
+    width: 90%;
+    max-width: 280px;
+    box-shadow: 4px 4px 4px 4px rgba(110, 7, 76, 0.963);
+  }
+  
+  .seccion-marcas h2 {
+    font-size: 1.8rem;
+  }
+  
+  .galeria-logos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 90vw;
+  }
+  
+  .seccion-suscripcion h2 {
+    font-size: calc(var(--texto-hero) * 0.7);
+  }
+  
+  .seccion-suscripcion p {
+    font-size: calc(var(--texto-boton) * 0.9);
+    padding: 0 15px;
+  }
+  
+  .seccion-suscripcion [placeholder] {
+    width: 90%;
+    max-width: 300px;
+    height: 45px;
+  }
+  
+  .seccion-suscripcion button {
+    width: 120px;
+    height: 40px;
+    font-size: calc(var(--texto-boton) * 0.9);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    height: 55vh;
+  }
+  
+  .hero h1 {
+    font-size: calc(var(--texto-hero) * 0.6);
+  }
+  
+  .seccion-categorias article {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .seccion-categorias h2,
+  .seccion-razones h2,
+  .seccion-suscripcion h2 {
+    font-size: calc(var(--texto-hero) * 0.6);
+  }
+  
+  .seccion-marcas h2 {
+    font-size: 1.5rem;
+  }
+  
+  .seccion-suscripcion [placeholder] {
+    height: 40px;
+  }
+  
+  .seccion-suscripcion button {
+    width: 110px;
+    height: 35px;
+  }
 }

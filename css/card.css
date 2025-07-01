@@ -1,4 +1,5 @@
 @import url('variables.css');
+
 main{
     width: 100%;
     height: 100%;
@@ -17,7 +18,6 @@ main{
     color: white;
     padding: 20px 0;
     box-sizing: border-box;
-    
 }
 
 .titulo,
@@ -26,9 +26,21 @@ main{
 }
 
 .pasos {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+
+.pasos::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 100%;
+    width: 90%;
+    height: 5px;
+    background-color: aliceblue;
+    z-index: 0;
 }
 
 .paso {
@@ -37,7 +49,7 @@ main{
     align-items: center;
     text-align: center;
     z-index: 1;
-
+    position: relative;
 }
 
 .paso-N {
@@ -49,31 +61,18 @@ main{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-}
-
-.paso-1 {
-    
     position: relative;
+    z-index: 2;
 }
 
 .pasos .activo{
     background-color: #FF5E3D;
 }
 
-.paso-1 .paso-N::before {
-    content: '';
-    position: absolute;
-    width: 65vw;
-    height: 5px;
-    background-color: aliceblue;
-    z-index: -1;
-    margin-left:62vw;
-}
-
 button{
- background-color: var(--boton-fondo2);
+    background-color: var(--boton-fondo2);
     color:var(--boton-texto2);
-   width:var(--boton-ancho2);
+    width:var(--boton-ancho2);
     height: var(--boton-alto2);
     border-radius: var(--borde-redondeado);
     margin: 10px;
@@ -93,7 +92,7 @@ button :hover{
     font-weight: 800;
 }
 .menu-derecho h2{
-font-size: 27px;
+    font-size: 27px;
 }
 .menu-derecho #buton2{
     background-color: var(--boton-fondo2);
@@ -109,7 +108,6 @@ font-size: 27px;
     width: 70vw;
     height: 100%;
 }
-
 
 .menu-derecho [type="text"]{
     width: 200px;
@@ -148,3 +146,207 @@ font-size: 27px;
     color: rgba(0, 0, 0, 0.496);
 }
 
+/* Mobile First - 480px and down */
+@media (max-width: 480px) {
+    .principal {
+        flex-direction: column;
+    }
+    
+    .seccion-carrito {
+        width: 100%;
+        order: 2;
+    }
+    
+    .menu-derecho {
+        width: 100%;
+        margin-top: 20px;
+        order: 1;
+        padding: 0 20px;
+    }
+    
+    .titulo,
+    .pasos {
+        margin: 0 5%;
+    }
+    
+    .pasos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .pasos::before {
+        display: none;
+    }
+    
+    .paso {
+        flex: 0 0 45%;
+        margin-bottom: 10px;
+    }
+    
+    .datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .accion {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .accion > div:first-child {
+        display: flex;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .menu-derecho [type="text"] {
+        width: 70%;
+        position: static;
+        margin: 0;
+        border-radius: var(--borde-redondeado2) 0 0 var(--borde-redondeado2);
+    }
+    
+    .menu-derecho #buton1 {
+        width: 30%;
+        margin: 0;
+        position: static;
+        border-radius: 0 var(--borde-redondeado2) var(--borde-redondeado2) 0;
+    }
+    
+    .menu-derecho #buton2 {
+        width: 100%;
+    }
+    
+    .btn-seguir {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* Tablet - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+    
+    .seccion-carrito {
+        width: 100%;
+        order: 2;
+    }
+    
+    .menu-derecho {
+        width: 100%;
+        margin-top: 20px;
+        order: 1;
+        padding: 0 30px;
+    }
+    
+    .titulo,
+    .pasos {
+        margin: 0 10%;
+    }
+    
+    .pasos {
+        gap: 15px;
+    }
+    
+    .pasos::before {
+        left: 15%;
+        right: 15%;
+    }
+    
+    .datos {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .accion > div:first-child {
+        display: flex;
+        gap: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .menu-derecho [type="text"] {
+        width: 70%;
+        position: static;
+        margin: 0;
+        border-radius: var(--borde-redondeado2) 0 0 var(--borde-redondeado2);
+    }
+    
+    .menu-derecho #buton1 {
+        width: 30%;
+        margin: 0;
+        position: static;
+        border-radius: 0 var(--borde-redondeado2) var(--borde-redondeado2) 0;
+    }
+}
+
+/* Desktop small - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-derecho {
+        width: 30vw;
+    }
+    
+    .seccion-carrito {
+        width: 65vw;
+    }
+    
+    .pasos::before {
+        left: 12%;
+        right: 12%;
+    }
+    
+    .accion > div:first-child {
+        display: flex;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .menu-derecho [type="text"] {
+        width: 60%;
+        position: static;
+        margin: 0;
+        border-radius: var(--borde-redondeado2) 0 0 var(--borde-redondeado2);
+    }
+    
+    .menu-derecho #buton1 {
+        width: 40%;
+        margin: 0;
+        position: static;
+        border-radius: 0 var(--borde-redondeado2) var(--borde-redondeado2) 0;
+    }
+}
+
+/* Desktop large - 1025px and up */
+@media (min-width: 1025px) {
+    .pasos::before {
+        left: 10%;
+        right: 10%;
+    }
+    
+    .accion > div:first-child {
+        display: flex;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .menu-derecho [type="text"] {
+        width: 65%;
+        position: static;
+        margin: 0;
+        border-radius: var(--borde-redondeado2) 0 0 var(--borde-redondeado2);
+    }
+    
+    .menu-derecho #buton1 {
+        width: 35%;
+        margin: 0;
+        position: static;
+        border-radius: 0 var(--borde-redondeado2) var(--borde-redondeado2) 0;
+    }
+}
